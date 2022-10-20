@@ -2,6 +2,16 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'DinCondMedium';
+    src: url('C:/Users/eliseev-ae/Desktop/Projects/electrocars/frontend/fonts/DinCondMedium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Yandex Sans';
+    src: url('C:/Users/eliseev-ae/Desktop/Projects/electrocars/frontend/fonts/YandexSansText_Regular.ttf') format('truetype');
+}
+
 .wrapper{
     display: flex;
     flex-wrap: wrap;
@@ -30,80 +40,59 @@
 }
 
 .text_box{
-    margin-top: 70px;
+    margin-top: 64px;
     width: 100%;
-}
-
-@font-face {
-    font-family: 'DinCondMedium';
-    src: url('https://xn----7sb7akeedqd.xn--p1ai/platform/catalogfile/cons_libraryFiles/DinCondMedium/DinCondMedium.ttf') format('truetype');
+    margin-left: 15px;
 }
 
 .title{
     font-family: 'DinCondMedium';
-    font-weight: bold;
-    color: black;
-    font-size: 2rem;
+    color: rgb(28,29,31);
+    font-size: 2.4rem;
     line-height: 1.2em;
-    margin-left: 15px;
     display: inline;
 }
 
 
 #map{
     width: 800px;
-    height: 450px;
-    margin-top: 20px;
+    height: 465px;
+    margin-top: 13px;
     clear: left;
     display: flex;
     margin-left: 15px;
     border: solid #005999;
+    position:relative;
 }
 
 .box_legend{
-    width: 194px;
-    height: 115px; 
-    margin-left: 17.5px;
-    margin-top: 614px;
+    width: 212.1px;
+    height: 86px; 
+    margin-left: 28px;
+    margin-top: 416.5px;
     position: fixed;
     background-color: white;
-    border: solid rgb(224, 224, 224);
+    border: solid rgb(213,213,206);
     border-width: 0.08em;
 }
 
-.legend{
-    margin-left: 2px; 
-    font-family: 'DinCondMedium';
-    font-weight: bold;
-    color: black;
-    font-size: 1.2rem;
-    line-height: 1.5em;
-    width: 100%;
-}
-
-.first, .second{
-    font-family: 'DinCondMedium';
-    color: black;
-    font-size: 0.87rem;
+.box_legend span{
+    font-family: 'Yandex Sans';
+    color: rgb(117,117,117);
+    font-size: 0.7rem;
     line-height: 0.9em;
 }
-
-.third, .fourth{
-    font-family: 'DinCondMedium';
-    color: black;
-    font-size: 0.87rem;
-    line-height: 0.9em;
-}
-
 
 .box_legend div{
+    margin-top: 1px;
     display:inline;
     position: absolute;
     margin-left: 3px;
 }
 
 .box_legend img{
-    margin-left: 2px; 
-    width: 17px;
-    height: 17px;
+    margin-top: 3px;
+    margin-left: 23.5px; 
+    width: 15px;
+    height: 15px;
 }
