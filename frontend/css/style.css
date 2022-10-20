@@ -61,56 +61,49 @@
 }
 
 .box_legend{
-    border: solid;
-    border-color: #005999;
-    border-radius: 5%;
-    margin-top: 20px;
-    width: 300px;
-    height: 160px; 
-    float: left;
-    margin-left: 1173px;
-    margin-top: 280px;
+    width: 194px;
+    height: 115px; 
+    margin-left: 17.5px;
+    margin-top: 614px;
     position: fixed;
-    flex-wrap: wrap;
+    background-color: white;
+    border: solid rgb(224, 224, 224);
+    border-width: 0.08em;
 }
 
 .legend{
-    margin-left: 10px; 
+    margin-left: 2px; 
     font-family: 'DinCondMedium';
     font-weight: bold;
     color: black;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 1.5em;
     width: 100%;
 }
 
-.box_legend span{
+.first, .second{
     font-family: 'DinCondMedium';
     color: black;
-    font-size: 1.2rem;
-    line-height: 1.5em;
+    font-size: 0.87rem;
+    line-height: 0.9em;
 }
 
-.first_img{
-    margin-left: 10px; 
-    width: 20px;
-    height: 20px;
+.third, .fourth{
+    font-family: 'DinCondMedium';
+    color: black;
+    font-size: 0.87rem;
+    line-height: 0.9em;
 }
 
-.second_img{
-    margin-left: 10px; 
-    width: 20px;
-    height: 20px;
+
+.box_legend div{
+    display:inline;
+    position: absolute;
+    margin-left: 3px;
 }
 
-.third_img{
-    margin-left: 10px; 
-    width: 20px;
-    height: 20px;
-}
-
-.fourth_img{
-    margin-left: 10px; 
-    width: 20px;
-    height: 20px;
+.box_legend img{
+    margin-left: 2px; 
+    width: 17px;
+    height: 17px;
 }

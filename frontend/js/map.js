@@ -44,11 +44,9 @@ function init() {
             if (activeRoute) {
                 // Получим протяженность маршрута.
                 var length = route.getActiveRoute().properties.get("distance"),
-                // Вычислим стоимость доставки.
-                    price = calculate(Math.round(length.value / 1000)),
                 // Создадим макет содержимого балуна маршрута.
                     balloonContentLayout = ymaps.templateLayoutFactory.createClass(
-                        '<span>Расстояние: ' + length.text + '</span>');
+                        '<span>Расстояние: ' + length.text + '\xa0\xa0\xa0</span>');
                 // Зададим этот макет для содержимого балуна.
                 route.options.set('routeBalloonContentLayout', balloonContentLayout);
                 // Откроем балун.
