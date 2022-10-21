@@ -43,6 +43,7 @@
     margin-top: 64px;
     width: 100%;
     margin-left: 15px;
+    white-space: nowrap;
 }
 
 .title{
@@ -58,7 +59,6 @@
     width: 800px;
     height: 470px;
     margin-top: 13px;
-    clear: left;
     display: flex;
     margin-left: 15px;
     border: solid #005999;
@@ -97,7 +97,7 @@
     height: 15px;
 }
 
- #start_date{
+ .start_date{
         height: 28px;
         width: 105px;
         float:left;
@@ -119,17 +119,18 @@
     background-color: white;
     border: solid rgb(255,219,77);
     border-width: 0.19em;
+    background-color: rgb(255,219,77);;
     outline-color: rgb(255,219,77);
-    width:34px;
-    height:42px;
+    width:33.5px;
+    height:39.5px;
     position: absolute;
     text-align: center;
     cursor:pointer;
-    margin-top: 287px;
+    margin-top: 288.25px;
     margin-left: 325.2px;
  }
 
- #period_start{
+ .period_start{
     height: 28px;
     width: 72px;
     float:left;
@@ -142,7 +143,7 @@
     outline-width: 1.2em;
  }
 
- #period_end{
+ .period_end{
     height: 28px;
     width: 72px;
     float:left;
