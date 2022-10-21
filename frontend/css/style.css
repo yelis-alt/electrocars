@@ -56,7 +56,7 @@
 
 #map{
     width: 800px;
-    height: 465px;
+    height: 470px;
     margin-top: 13px;
     clear: left;
     display: flex;
@@ -69,7 +69,7 @@
     width: 212.1px;
     height: 86px; 
     margin-left: 28px;
-    margin-top: 416.5px;
+    margin-top: 450.5px;
     position: fixed;
     background-color: white;
     border: solid rgb(213,213,206);
@@ -96,3 +96,77 @@
     width: 15px;
     height: 15px;
 }
+
+ #start_date{
+        height: 28px;
+        width: 105px;
+        float:left;
+        position:absolute;
+        margin-top: 294px;
+        margin-left: 43px;
+        border: solid rgb(204,204,204);
+        border-width: 0.09em;
+        outline-color: rgb(255,219,77);
+        outline-width: 1.2em;
+ }
+
+ #ok{
+    font-family: 'Yandex Sans';
+    color: rgb(102,102,102);
+    font-size: 0.7rem;
+    font-weight: 800;
+    line-height: 0.9em;
+    background-color: white;
+    border: solid rgb(255,219,77);
+    border-width: 0.19em;
+    outline-color: rgb(255,219,77);
+    width:34px;
+    height:42px;
+    position: absolute;
+    text-align: center;
+    cursor:pointer;
+    margin-top: 287px;
+    margin-left: 325.2px;
+ }
+
+ #period_start{
+    height: 28px;
+    width: 72px;
+    float:left;
+    position:absolute;
+    margin-top: 294px;
+    margin-left: 150px;
+    border: solid rgb(204,204,204);
+    border-width: 0.09em;
+    outline-color: rgb(255,219,77);
+    outline-width: 1.2em;
+ }
+
+ #period_end{
+    height: 28px;
+    width: 72px;
+    float:left;
+    position:absolute;
+    margin-top: 294px;
+    margin-left: 240px;
+    border: solid rgb(204,204,204);
+    border-width: 0.09em;
+    outline-color: rgb(255,219,77);
+    outline-width: 1.2em;
+ }
+
+.tire{
+    float:left;
+    position:absolute;
+    margin-top: 293px;
+    margin-left: 227.5px;
+    font-family: 'Yandex Sans';
+    color: rgb(102,102,102);
+    font-size: 1.1rem;
+    font-weight: 1200;
+    line-height: 0.9em;
+}
+
+
+
+ 
