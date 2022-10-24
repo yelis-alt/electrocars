@@ -9,7 +9,7 @@ function init() {
     // Создадим панель маршрутизации.
         routePanelControl = new ymaps.control.RoutePanel({
             options: {
-                maxWidth: '330px',
+                maxWidth: '370px',
                 showHeader: true,
                 title: ' '
             }
@@ -46,7 +46,7 @@ function init() {
                 var length = route.getActiveRoute().properties.get("distance"),
                 // Создадим макет содержимого балуна маршрута.
                     balloonContentLayout = ymaps.templateLayoutFactory.createClass(
-                        '<span>Расстояние: ' + length.text + '\xa0\xa0\xa0</span>');
+                        '<span>Расстояние: ' + length.text + '\xa0\xa0\xa0\xa0</span>');
                 // Зададим этот макет для содержимого балуна.
                 route.options.set('routeBalloonContentLayout', balloonContentLayout);
                 // Откроем балун.

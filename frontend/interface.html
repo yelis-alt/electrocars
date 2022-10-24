@@ -19,7 +19,6 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
     <div class="wrapper">
         <div class="container">
@@ -31,7 +30,7 @@
         </div>
         <div class="text_box">
             <h class="title">
-                Аренда электрозарядной станции 
+                Бронирование электрозарядной станции 
             </h>
         </div>
         <div id="map">
@@ -63,18 +62,19 @@
                     </span>
                 </div>
             </div>
-        <input type="date" id="currentDate" class = "start_date"
-               name="date_trip"/>
-        <button type="button" id="ok">
-            OK
-        </button>
-        <input type="time" class ="period_start" id="chosenTime" name="appt1" value = "12:00">
-        <input type="time" class ="period_end" id="leftTime" name="appt2" value = "12:30">
+        <form class = "form">
+            <input type="datetime-local" id="firstDate" class = "start_date" name="date_trip"/>
+            <input type="datetime-local" id="secondDate" class = "end_date" name="date_trip"/>
+            <button type="submit" id="ok" value = "OK">
+                ОК
+            </button>
+        </form> 
         <div class="tire">
         _
         </div>
     </div>
+    <script src = "js/jquery-3.6.1.min.js" type="text/javascript"></script>
     <script src="js/dates.js" type="text/javascript"></script>
+    <script src = "js/tethers.js" type="text/javascript"></script>
 </body>
-
 </html>
