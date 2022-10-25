@@ -2,6 +2,13 @@
     box-sizing: border-box;
 }
 
+html, body, #map {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
 @font-face {
     font-family: 'DinCondMedium';
     src: url('C:/Users/eliseev-ae/Desktop/Projects/electrocars/frontend/fonts/DinCondMedium.ttf') format('truetype');
@@ -12,7 +19,29 @@
     src: url('C:/Users/eliseev-ae/Desktop/Projects/electrocars/frontend/fonts/YandexSansText_Regular.ttf') format('truetype');
 }
 
-.wrapper{
+.tabs{
+    display: flex;
+    position: absolute;
+    margin-top: 152px;
+    display:inline-block;
+}
+
+.tabs button+button{
+    margin-left: 15px;
+}
+
+.tablink{
+    border: 0px;
+    background-color: white;
+    height: 20px;
+    cursor: pointer;
+    margin-left: 15px;
+    font-size: 25px;
+    border-bottom: solid blue;
+    height: 35px;
+}
+
+#withmap{
     display: flex;
     flex-wrap: wrap;
 }
@@ -40,9 +69,8 @@
 }
 
 .text_box{
-    margin-top: 64px;
+    margin-top: 65px;
     width: 100%;
-    margin-left: 15px;
     white-space: nowrap;
 }
 
@@ -52,6 +80,7 @@
     font-size: 2.4rem;
     line-height: 1.2em;
     display: inline;
+    margin-left: 15px;
 }
 
 
@@ -62,15 +91,15 @@
     display: flex;
     margin-left: 15px;
     border: solid #005999;
-    position:relative;
+    position:absolute;
 }
 
 .box_legend{
     width: 212.1px;
     height: 86px; 
+    margin-top: 188px;
     margin-left: 28px;
-    margin-top: 450.5px;
-    position: fixed;
+    position: absolute;
     background-color: white;
     border: solid rgb(213,213,206);
     border-width: 0.08em;
@@ -97,13 +126,17 @@
     height: 15px;
 }
 
+.control{
+    position: absolute;
+    display: flex;
+}
+
  .start_date{
     height: 28px;
     float:left;
     width: 150px;
-    position:absolute;
-    margin-top: 294px;
-    margin-left: 43px;
+    margin-top: 6px;
+    margin-left: -26px;
     border: solid rgb(204,204,204);
     border-width: 0.09em;
     outline-color: rgb(255,219,77);
@@ -114,9 +147,8 @@
     height: 28px;
     width: 150px;
     float:left;
-    position:absolute;
-    margin-top: 294px;
-    margin-left: 208px;
+    margin-top: -28px;
+    margin-left: 141px;
     border: solid rgb(204,204,204);
     border-width: 0.09em;
     outline-color: rgb(255,219,77);
@@ -134,30 +166,24 @@
     border-width: 0.19em;
     background-color: rgb(255,219,77);;
     outline-color: rgb(255,219,77);
-    width: 33.5px;
+    max-width: 33.5px;
     height: 40px;
-    position: absolute;
     text-align: center;
-    cursor:pointer;
-    margin-top: 288px;
-    margin-left: 365.25px;
+    cursor: pointer;
+    display: flex;
+    padding-top: 13px;
+    margin-top: -225.5px;
+    margin-left: 295.5px;
  }
 
 .tire{
-    float:left;
-    position:absolute;
-    margin-top: 293px;
-    margin-left: 196.5px;
     font-family: 'Yandex Sans';
     color: rgb(102,102,102);
     font-size: 1.1rem;
     font-weight: 1200;
     line-height: 0.9em;
-}
-
-.form{
-    display: flex;
+    margin-left: 200px;
+    padding-top: 32px;
     position: absolute;
 }
 
- 
