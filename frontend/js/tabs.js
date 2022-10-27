@@ -10,4 +10,19 @@ function openPage(pageName, elmnt, color) {
   }
   document.getElementById(pageName).style.display = "block";
 }
+
 document.getElementById("defaultOpen").click();
+
+var tabs = document.getElementsByClassName('tablink');
+
+Array.prototype.forEach.call(tabs, function(tab) {
+  tab.addEventListener('click', setActiveClass);
+});
+
+function setActiveClass(evt) {
+  Array.prototype.forEach.call(tabs, function(tab) {
+    tab.classList.remove('active');
+  });
+  
+  evt.currentTarget.classList.add('active');
+}
