@@ -8,144 +8,144 @@
 </head>
 <body>
     <div class="tabs">
-        <button class="tablink" onclick="openPage('withparam', this)" id="defaultOpen">Сведения об ЭЗС</button>
-        <button class="tablink" onclick="openPage('withmap', this)" id="secondOpen">Маршрутизация и бронирование</button>
+        <button class="tabs-link" onclick="openPage('parameters', this)" id="defaultOpen">Сведения об ЭЗС</button>
+        <button class="tabs-link" onclick="openPage('routing', this)" id="secondOpen">Маршрутизация и бронирование</button>
     </div>
-    <div class="container">
+    <div class="headcontainer">
         <header class="header">
-            <a class="logo" href="https://xn----7sb7akeedqd.xn--p1ai/platform/portal/tehprisEE_portal">
+            <a class="header-logo" href="https://xn----7sb7akeedqd.xn--p1ai/platform/portal/tehprisEE_portal">
                 <img style="display:inline" src="images/logo.svg" alt="">
             </a>
         </header>
     </div>
-    <div class="text_box">
-        <h class="title">
+    <div class="textbox">
+        <h class="textbox-title">
             Бронирование электрозарядной станции 
         </h>
     </div>
-    <div id="withparam" class="tabcontent">
-        <div class="charger_param">
-            <form action="submit" class = "next">
-                <p class = "filter_station_title">
+    <div id="parameters" class="tabcontent">
+        <div class="charger">
+            <form action="submit" class = "parameters-form">
+                <p class = "charger-title">
                     Характеристики электрозарядной станции
                 </p>
-                <p class = "shtaker_type">
+                <p class = "charger__type-title">
                     Тип штекера:
                 </p>
-                <div class="type_chooser">
-                    <div id="type_chooser">
-                        <input type="radio" class = "type_shtaker" id="line1" name="line-style" value="t2" checked="checked" />
-                        <label class = "shtaker_first" for="line1"></label>
-                        <input type="radio" class = "type_shtaker" id="line2" name="line-style" value="chademo" />
-                        <label class = "shtaker_second" for="line2"></label>
-                        <input type="radio" class = "type_shtaker" id="line3" name="line-style" value="ccsombo2" />
-                        <label class = "shtaker_third" for="line3"></label>
-                        <input type="radio" class = "type_shtaker" id="line4" name="line-style" value="saej1772" />
-                        <label class = "shtaker_fourth" for="line4"></label>
-                        <input type="radio" class = "type_shtaker" id="line5" name="line-style" value="ccsombo2" />
-                        <label class = "shtaker_fifth" for="line5"></label>
-                        <input type="radio" class = "type_shtaker" id="line6" name="line-style" value="tesla" />
-                        <label class = "shtaker_sixth" for="line6"></label>
-                        <input type="radio" class = "type_shtaker" id="line7" name="line-style" value="gbtac" />
-                        <label class = "shtaker_seventh" for="line7"></label>
-                        <input type="radio" class = "type_shtaker" id="line8" name="line-style" value="gbtdc" />
-                        <label class = "shtaker_eighth" for="line8"></label>
+                <div class="charger__type__chooser">
+                    <div id="charger__type__chooser">
+                        <input type="radio" id="line1" name="line-style" value="t2" checked="checked" />
+                        <label class = "charger__type__chooser-radio1" for="line1"></label>
+                        <input type="radio" id="line2" name="line-style" value="chademo" />
+                        <label class = "charger__type__chooser-radio2" for="line2"></label>
+                        <input type="radio" id="line3" name="line-style" value="ccsombo2" />
+                        <label class = "charger__type__chooser-radio3" for="line3"></label>
+                        <input type="radio" id="line4" name="line-style" value="saej1772" />
+                        <label class = "charger__type__chooser-radio4" for="line4"></label>
+                        <input type="radio" id="line5" name="line-style" value="ccsombo2" />
+                        <label class = "charger__type__chooser-radio5" for="line5"></label>
+                        <input type="radio" id="line6" name="line-style" value="tesla" />
+                        <label class = "charger__type__chooser-radio6" for="line6"></label>
+                        <input type="radio" id="line7" name="line-style" value="gbtac" />
+                        <label class = "charger__type__chooser-radio7" for="line7"></label>
+                        <input type="radio" id="line8" name="line-style" value="gbtdc" />
+                        <label class = "charger__type__chooser-radio8" for="line8"></label>
                     </div>
                 </div>
-                <p class = "electro_type_title">
+                <p class = "charger__torrent-title">
                     Разновидность электрического тока:
                 </p>
-                <div class="electro_type">      
-                    <fieldset id="electro_type">
+                <div class="charger__torrent">      
+                    <fieldset id="charger__torrent">
                         <div>
-                            <input type="checkbox" class = "type_electricity" id="ac" name="ac" values = "ac" checked>
+                            <input type="checkbox" id="ac" name="ac" values = "ac" checked>
                             <label for="ac">AC (переменный ток)</label>
                         </div>
                         <div>
-                            <input type="checkbox" class = "type_electricity" id="dc" name="dc" value = "dc" checked>
+                            <input type="checkbox" id="dc" name="dc" value = "dc" checked>
                             <label for="dc">DC (постоянный ток)</label>
                         </div>
                     </fieldset>
                 </div>  
-                <p class="range_title">
+                <p class="charger__kvt-title">
                     Диапозон мощности (кВт):
                 </p>
-                <div class="range_wrapping">
-                    <div class="range_container">
-                        <div class="form_control">
-                            <div class="form_control_container">
-                                <div class="form_control_container__time"></div>
-                                <input class="min_kvt" type="number" id="fromInput" value="7" min="0" max="100"/>
+                <div class="charger__kvt">
+                    <div class="charger__kvt__container">
+                        <div class="charger__kvt__control-form">
+                            <div class="charger__kvt__control-form__container">
+                                <div class="form__control__container-time"></div>
+                                <input type="number" id="fromInput_kvt" value="7" min="0" max="100"/>
                             </div>
-                            <div class="form_control_container">
-                                <div class="form_control_container__time"></div>
-                                <input class="max_kvt" type="number" id="toInput" value="50" min="0" max="100"/>
+                            <div class="charger__kvt__control-form__container">
+                                <div class="form__control__container-time"></div>
+                                <input type="number" id="toInput_kvt" value="50" min="0" max="100"/>
                             </div>
                         </div>
-                        <div class="sliders_control">
-                            <input id="fromSlider" type="range" value="7" min="0" max="100"/>
-                            <input id="toSlider" type="range" value="50" min="0" max="100"/>
+                        <div class="charger__kvt__control-sliders">
+                            <input id="fromSlider_kvt" type="range" value="7" min="0" max="100"/>
+                            <input id="toSlider_kvt" type="range" value="50" min="0" max="100"/>
                         </div>
                     </div>
                 </div>
-                <p class="range_title">
+                <p class="charger__price-title">
                     Диапозон цены за потребление 1 кВт (руб.):
                 </p>
-                <div class="range_wrapping1">
-                    <div class="range_container1">
-                        <div class="form_control1">
-                            <div class="form_control_container1">
-                                <div class="form_control_container__time1"></div>
-                                <input class="min_price" type="number" id="fromInput1" value="0" min="0" max="100"/>
+                <div class="charger__price">
+                    <div class="charger__price__container">
+                        <div class="charger__price__container__control">
+                            <div class="charger__price__control-form__container">
+                                <div class="form__control__container-time"></div>
+                                <input type="number" id="fromInput_price" value="0" min="0" max="100"/>
                             </div>
                             <div class="form_control_container1">
-                                <div class="form_control_container__time1"></div>
-                                <input class="max_price" type="number" id="toInput1" value="50" min="0" max="100"/>
+                                <div class="form__control__container-time"></div>
+                                <input type="number" id="toInput_price" value="50" min="0" max="100"/>
                             </div>
                         </div>
-                        <div class="sliders_control1">
-                            <input id="fromSlider1" type="range" value="0" min="0" max="100"/>
-                            <input id="toSlider1" type="range" value="50" min="0" max="100"/>
+                        <div class="charger__price__control-sliders">
+                            <input id="fromSlider_price" type="range" value="0" min="0" max="100"/>
+                            <input id="toSlider_price" type="range" value="50" min="0" max="100"/>
                         </div>
                     </div>
                 </div>
         </div>
     </div>
     <!---->
-    <div id="withmap" class="tabcontent">
+    <div id="routing" class="tabcontent">
         <div id="map">
             <!--map-->
         </div>
-        <div class="box_legend">
-            <img src="images\a.png" alt="" class="first_img">
-            <div class="first_block">
-                <span class="first">
+        <div class="routing__legendbox">
+            <img src="images\a.png" alt="">
+            <div>
+                <span>
                 - начальная точка маршрута             
                 </span>
             </div><br>
-            <img src="images\b.png" alt="" class="second_img">
-            <div class="second_block">
-                <span class="second">
+            <img src="images\b.png" alt="">
+            <div>
+                <span>
                     - конечная точка маршрута
                 </span>
             </div><br>
-            <img src="images\с.png" alt="" class="third_img"> 
-            <div class="third_block">
-                <span class="third">
+            <img src="images\с.png" alt=""> 
+            <div>
+                <span>
                     - доступная ЭЗС
                 </span>
             </div><br>
-            <img src="images\d.png" alt="" class="fourth_img">
-            <div class="fourth_block">
-                <span class="fourth">
+            <img src="images\d.png" alt="">
+            <div>
+                <span>
                     - недоступная ЭЗС
                 </span>
             </div>
         </div>
-        <div class="control">
-                <input type="datetime-local" id="firstDate" class = "start_date" name="date_trip"/>
-                <input type="datetime-local" id="secondDate" class = "end_date" name="date_trip"/>
-                <div class="tire">
+        <div class="routing__control">
+                <input type="datetime-local" id="firstDate" class = "routing__control-start" name="date_trip"/>
+                <input type="datetime-local" id="secondDate" class = "routing__control-end" name="date_trip"/>
+                <div class="routing__control-tire">
                     _
                 </div>
                 <button type="submit" id="ok" value = "OK">
