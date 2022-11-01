@@ -1,457 +1,654 @@
-*{
-    box-sizing: border-box;
-}
-
-html, body, #map {
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-}
-
 @font-face {
-    font-family: 'DinCondMedium';
-    src: url('C:/Users/eliseev-ae/Desktop/Projects/electrocars/frontend/fonts/DinCondMedium.ttf') format('truetype');
+  font-family: "DinCondMedium";
+  src: url("C:/Users/eliseev-ae/Desktop/Projects/electrocars/frontend/fonts/DinCondMedium.ttf") format("truetype");
 }
-
 @font-face {
-    font-family: 'Yandex Sans';
-    src: url('C:/Users/eliseev-ae/Desktop/Projects/electrocars/frontend/fonts/YandexSansText_Regular.ttf') format('truetype');
+  font-family: "Yandex Sans";
+  src: url("C:/Users/eliseev-ae/Desktop/Projects/electrocars/frontend/fonts/YandexSansText_Regular.ttf") format("truetype");
 }
-
 @font-face {
-    font-family: 'DinCondLight';
-    src: url('C:/Users/eliseev-ae/Desktop/Projects/electrocars/frontend/fonts/DinCondLight.ttf') format('truetype');
+  font-family: "DinCondLight";
+  src: url("C:/Users/eliseev-ae/Desktop/Projects/electrocars/frontend/fonts/DinCondLight.ttf") format("truetype");
+}
+* {
+  box-sizing: border-box;
 }
 
-.tabs{
-    position: absolute;
-    margin-top: 165px;
-    margin-left: 38.1px;
-    display:inline-block;
+html {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  width: 800px;
+  height: 450px;
+  margin-top: 17.5px;
+  display: flex;
+  margin-left: 42px;
+  border: solid #005999;
+  position: absolute;
+}
+
+.tabs {
+  position: absolute;
+  margin-top: 165px;
+  margin-left: 44px;
+  display: inline-block;
+  white-space: nowrap;
+  height: 46px;
+  border-bottom: 1.5px solid rgb(224, 224, 224);
+}
+.tabs button + button {
+  margin-left: 46px;
+}
+
+.tablink {
+  background-color: white;
+  cursor: pointer;
+  font-size: 1.2rem;
+  white-space: wrap;
+  display: inline-block;
+  vertical-align: top;
+  float: none;
+  height: 45px;
+  font-family: "DinCondLight";
+  padding-bottom: 25px;
+  border: none;
+  outline: none;
+}
+.tablink::after {
+  content: "";
+  display: block;
+  margin-top: 19px;
+  width: 0;
+  height: 3px;
+  background: rgb(0, 89, 153);
+  transition: width 0.2s;
+}
+.tablink:hover::after {
+  width: 100%;
+}
+
+#defaultOpen {
+  border-bottom: 3.5px solid #005999;
+}
+
+#withparam {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+}
+
+.charger_param {
+  width: 700px;
+  height: 450px;
+  margin-top: 17.5px;
+  margin-left: 44px;
+  border: 5px solid #005999;
+  border-radius: 3%;
+  position: absolute;
+}
+
+.filter_station_title {
+  margin-top: 5px;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  font-family: "DinCondMedium";
+  border-bottom: 5px solid #005999;
+  text-align: center;
+  height: 40px;
+  display: block;
+}
+
+.shtaker_type {
+  padding-top: 5px;
+  font-size: 1.6rem;
+  line-height: 1.1rem;
+  font-family: "DinCondMedium";
+  text-align: left;
+  padding-left: 13px;
+  height: 50px;
+  display: block;
+}
+
+.type_chooser {
+  border-bottom: 1.5px solid black;
+  height: 130px;
+}
+
+#type_chooser {
+  margin-top: -15px;
+  margin-left: 13px;
+  border: 1px solid black;
+  width: 235px;
+  overflow: hidden;
+  height: 121px;
+  overflow-y: scroll;
+}
+#type_chooser input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+#type_chooser input:checked + label {
+  opacity: 1 !important;
+  display: block;
+}
+#type_chooser label {
+  display: block;
+}
+
+.shtaker_first {
+  display: none;
+  margin: 1.5px;
+  text-align: center;
+  height: 57.5px;
+  opacity: 0.5;
+  background: url("C://Users//eliseev-ae//Desktop//Projects//electrocars//frontend//images//t2.png") 50% 50%;
+  cursor: pointer;
+}
+
+.shtaker_second {
+  display: none;
+  margin: 1.5px;
+  text-align: center;
+  height: 57.5px;
+  opacity: 0.5;
+  background: url("C://Users//eliseev-ae//Desktop//Projects//electrocars//frontend//images//chademo.png");
+  cursor: pointer;
+}
+
+.shtaker_third {
+  display: none;
+  margin: 1.5px;
+  text-align: center;
+  height: 57.5px;
+  opacity: 0.5;
+  background: url("C://Users//eliseev-ae//Desktop//Projects//electrocars//frontend//images//ccscombo2.png");
+  cursor: pointer;
+}
+
+.shtaker_fourth {
+  display: none;
+  margin: 1.5px;
+  text-align: center;
+  height: 57.5px;
+  opacity: 0.5;
+  background: url("C://Users//eliseev-ae//Desktop//Projects//electrocars//frontend//images//saej1772.png");
+  cursor: pointer;
+}
+
+.shtaker_fifth {
+  display: none;
+  margin: 1.5px;
+  text-align: center;
+  height: 57.5px;
+  opacity: 0.5;
+  background: url("C://Users//eliseev-ae//Desktop//Projects//electrocars//frontend//images//ccscombo1.png");
+  cursor: pointer;
+}
+
+.shtaker_sixth {
+  display: none;
+  margin: 1.5px;
+  text-align: center;
+  height: 57.5px;
+  opacity: 0.5;
+  background: url("C://Users//eliseev-ae//Desktop//Projects//electrocars//frontend//images//tesla.png");
+  cursor: pointer;
+}
+
+.shtaker_seventh {
+  display: none;
+  margin: 1.5px;
+  text-align: center;
+  height: 57.5px;
+  opacity: 0.5;
+  background: url("C://Users//eliseev-ae//Desktop//Projects//electrocars//frontend//images//gbtac.png");
+  cursor: pointer;
+}
+
+.shtaker_eighth {
+  display: none;
+  margin: 1.5px;
+  text-align: center;
+  height: 57.5px;
+  opacity: 0.5;
+  background: url("C://Users//eliseev-ae//Desktop//Projects//electrocars//frontend//images//gbtdc.png");
+  cursor: pointer;
+}
+
+.electro_type_title {
+  margin-top: 1px;
+  padding-top: 4px;
+  font-size: 1.6rem;
+  line-height: 1.1rem;
+  font-family: "DinCondMedium";
+  text-align: left;
+  padding-left: 13px;
+  height: 40px;
+  display: block;
+}
+
+.electro_type {
+  margin-top: -10px;
+  border-bottom: 1.5px solid black;
+  height: 32px;
+}
+.electro_type div {
+  display: inline-block;
+  margin-top: 5px;
+}
+.electro_type div + div {
+  margin-left: 70px;
+}
+.electro_type label {
+  font-size: 1.4rem;
+  line-height: 1.1rem;
+  font-family: "DinCondLight";
+  vertical-align: middle;
+}
+
+#electro_type {
+  padding-left: 10px;
+  height: 47px;
+}
+
+.range_wrapping {
+  border-bottom: 1.5px solid #000000;
+  height: 59px;
+  margin-top: -16px;
+}
+
+.range_container {
+  display: flex;
+  flex-direction: column;
+  width: 96%;
+  margin-left: 12px;
+}
+
+.sliders_control {
+  position: relative;
+  min-height: 12.5px;
+  margin-top: 3px;
+}
+
+.form_control {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  font-size: 22px;
+  color: black;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  pointer-events: all;
+  width: 24px;
+  height: 24px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px black;
+  cursor: pointer;
+}
+input[type=range]::-webkit-slider-thumb:hover {
+  box-shadow: inset 0 0 3px #005999, 0 0 6px #005999;
+  -webkit-box-shadow: inset 0 0 6px #005999, 0 0 6px #005999;
+}
+input[type=range]::-webkit-slider-thumb:active {
+  box-shadow: inset 0 0 3px #005999, 0 0 6px #005999;
+  -webkit-box-shadow: inset 0 0 3px #005999, 0 0 6px #005999;
+}
+input[type=range]::-moz-range-thumb {
+  pointer-events: all;
+  width: 24px;
+  height: 24px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+input[type=number] {
+  color: black;
+  width: 40px;
+  height: 35px;
+  font-size: 1rem;
+  line-height: 1rem;
+  font-family: "DinCondLight";
+  border: none;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  opacity: 1;
+}
+input[type=number]::-webkit-outer-spin-button {
+  opacity: 1;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  background-color: #005999;
+  pointer-events: none;
+}
+
+#fromSlider {
+  height: 0;
+  z-index: 1;
+}
+
+.range_wrapping1 {
+  height: 59px;
+  margin-top: -16px;
+}
+
+.range_container1 {
+  display: flex;
+  flex-direction: column;
+  width: 96%;
+  margin-left: 12px;
+}
+
+.sliders_control1 {
+  position: relative;
+  min-height: 12.5px;
+  margin-top: 3px;
+}
+
+.form_control1 {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  font-size: 22px;
+  color: black;
+}
+
+#fromSlider1 {
+  height: 0;
+  z-index: 1;
+}
+
+.range_title {
+  margin-top: 1px;
+  padding-top: 4px;
+  font-size: 1.6rem;
+  line-height: 1.1rem;
+  font-family: "DinCondMedium";
+  text-align: left;
+  padding-left: 13px;
+  height: 40px;
+  display: block;
+}
+
+#withmap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container {
+  background-color: #005999;
+}
+
+.header {
+  height: 152px;
+  text-align: center;
+  top: 0;
+}
+
+.logo img {
+  text-align: center;
+  float: left;
+  margin-top: 54px;
+  margin-left: 54px;
+  width: 146px;
+  height: 42px;
+}
+
+.text_box {
+  margin-top: 64.25px;
+  white-space: nowrap;
+  margin-left: 42px;
+}
+
+.title {
+  font-family: "DinCondMedium";
+  color: rgb(28, 29, 31);
+  font-size: 2.4rem;
+  line-height: 1.1em;
+  display: flex;
+}
+
+.box_legend {
+  width: 213.5px;
+  height: 86px;
+  margin-top: 193px;
+  margin-left: 54.5px;
+  position: absolute;
+  background-color: white;
+  border: solid rgb(213, 213, 206);
+  border-width: 0.08em;
+}
+.box_legend span {
+  font-family: "Yandex Sans";
+  color: rgb(117, 117, 117);
+  font-size: 0.7rem;
+  line-height: 0.9em;
+}
+.box_legend div {
+  margin-top: 1px;
+  display: inline;
+  position: absolute;
+  margin-left: 3px;
+}
+.box_legend img {
+  margin-top: 3px;
+  margin-left: 25px;
+  width: 15px;
+  height: 15px;
+}
+
+.control {
+  position: absolute;
+  display: flex;
+  margin-left: 69.25px;
+  margin-top: 36.25px;
+  justify-content: space-between;
+}
+.control input + input {
+  margin-left: 20px;
+}
+
+.start_date {
+  height: 28px;
+  float: left;
+  width: 140px;
+  border: solid rgb(204, 204, 204);
+  border-width: 0.09em;
+  outline-color: rgb(255, 219, 77);
+  outline-width: 1.2em;
+  font-family: "Yandex Sans";
+}
+
+.end_date {
+  height: 28px;
+  width: 140px;
+  float: left;
+  border: solid rgb(204, 204, 204);
+  border-width: 0.09em;
+  outline-color: rgb(255, 219, 77);
+  outline-width: 1.2em;
+  font-family: "Yandex Sans";
+}
+
+#ok {
+  font-family: "Yandex Sans";
+  color: rgb(102, 102, 102);
+  font-size: 0.7rem;
+  font-weight: 800;
+  line-height: 0.9em;
+  background-color: white;
+  border: solid rgb(255, 219, 77);
+  border-width: 0.19em;
+  background-color: rgb(255, 219, 77);
+  outline-color: rgb(255, 219, 77);
+  width: 33.5px;
+  height: 40px;
+  text-align: center;
+  cursor: pointer;
+  float: left;
+  margin-left: 4px;
+  margin-top: -5.5px;
+}
+
+.tire {
+  font-family: "Yandex Sans";
+  color: rgb(102, 102, 102);
+  font-size: 1.1rem;
+  font-weight: 1200;
+  line-height: 0.9em;
+  position: absolute;
+  margin-left: 146.5px;
+}
+
+@media (max-width: 1024px) {
+  .header {
+    height: 60.8px;
+    text-align: center;
+    top: 0;
+  }
+  .logo img {
+    text-align: center;
+    float: left;
+    margin-top: 9.5px;
+    margin-left: 18.8px;
+    width: 132.09px;
+    height: 38px;
+  }
+  .text_box {
+    margin-top: 35px;
     white-space: nowrap;
-    height: 46px;
-    border-bottom: 1.5px solid rgb(224, 224, 224);
-}
-
-.tabs button+button{
+    margin-left: 10px;
+  }
+  .title {
+    font-family: "DinCondMedium";
+    color: rgb(28, 29, 31);
+    font-size: 2.2rem;
+    line-height: 1em;
+    display: flex;
+  }
+  .tabs {
+    position: absolute;
+    margin-top: 61px;
+    margin-left: 12px;
+    display: inline-block;
+    white-space: nowrap;
+    height: 30.5px;
+    border-bottom: 0.1px solid rgb(224, 224, 224);
+  }
+  .tabs button + button {
     margin-left: 46px;
-}
-
-.tablink{
+  }
+  .tablink {
     background-color: white;
     cursor: pointer;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     white-space: wrap;
     display: inline-block;
     vertical-align: top;
     float: none;
-    height: 45px;
-    font-family: 'DinCondLight';
+    height: 3px;
+    font-family: "DinCondLight";
     padding-bottom: 25px;
     border: none;
     outline: none;
-}
-
-#defaultOpen{
-    border-bottom: 3.5px solid #005999;
-}
-
-.tablink::after {
-    content: '';
+  }
+  .tablink::after {
+    content: "";
     display: block;
-    margin-top: 19px;
+    margin-top: 0px;
     width: 0;
-    height: 3px;
+    height: 3.5px;
     background: rgb(0, 89, 153);
-    transition: width .2s;
-}
-
-.tablink:hover::after {
+    transition: width 0.2s;
+  }
+  .tablink:hover::after {
     width: 100%;
-}
-
-#withparam{
-    display: flex;
-    flex-wrap: wrap;
-    position: absolute;
-}
-
-.charger_param{
+  }
+  .charger_param {
     width: 400px;
     height: 450px;
     margin-top: 17.5px;
-    margin-left: 42px;
+    margin-left: 10px;
     border: solid #005999;
     border-radius: 3%;
-    position:absolute;
-}
-
-.filter_station_title{
-    margin-top: 5px;
-    font-size: 1.4rem;
-    line-height: 2rem;
-    font-family: 'DinCondMedium';
-    border-bottom: solid #005999;
-    text-align: center;
-    height: 40px;
-    display: block; 
-}
-
-.shtaker_type{  
-    padding-top: 5px;
-    font-size: 1.2rem;
-    line-height: 1.5rem;
-    font-family: 'DinCondMedium';
-    text-align: left;
-    padding-left: 13px;
-    height: 40px;
-    display: block;  
-}
-
-.type_chooser{
-    border-bottom: 1.5px solid black;
-    height: 60px;
-    display: inline;
-}
-
-#type_chooser {
-    margin-top: -10px;
-    margin-left: 13px;
-    border:1px solid black; width:180px; height:53px; overflow:hidden;
-    height:105px; overflow-y:scroll;
-}
-
-#type_chooser input {
-    position:absolute;top:0;left:0;opacity:0;
-}
-
-#type_chooser label{
-    display:block;
-}
-
-#type_chooser input:checked + label {
-    opacity:1 !important; display:block;
-}
-.shtaker_first {
-    display:none; margin:3px; text-align: center; height:47px; opacity:0.5;
-    background:url("C://Users//eliseev-ae//Desktop//Projects//electrocars//frontend//images//type2.png");
-    cursor: pointer;}
-
-.shtaker_second {
-    display:none; margin:3px; text-align: center; height:47px; opacity:0.5;
-    background:url("C://Users//eliseev-ae//Desktop//Projects//electrocars//frontend//images//chademo.png");
-    cursor: pointer;}
-
-.shtaker_third {
-    display:none; margin:3px; text-align: center; height:47px; opacity:0.5;
-    background:url("C://Users//eliseev-ae//Desktop//Projects//electrocars//frontend//images//ccscombo2.png");
-    cursor: pointer;}
-
-.shtaker_fourth {
-    display:none; margin:3px; text-align: center; height:47px; opacity:0.5;
-    background:url("C://Users//eliseev-ae//Desktop//Projects//electrocars//frontend//images//saej1772.png");
-    cursor: pointer;}
-
-.electro_type_title{  
-    margin-top: 8px;
-    padding-top: 4px;
-    font-size: 1.2rem;
-    line-height: 1.5rem;
-    font-family: 'DinCondMedium';
-    text-align: left;
-    padding-left: 13px;
-    height: 40px;
-    display: block;  
-    border-top: 1.5px solid black;
-}
-
-.electro_type{
-    margin-top: -10px;
-    border-bottom: 1.5px solid black;
-} 
-
-.electro_type label{
-    font-size: 1.1rem;
-    line-height: 1.2rem;
-    font-family: 'DinCondLight';
-    vertical-align: middle;
-}
-
-#electro_type{
-    padding-left: 10px;
-    height: 47px;
-}
-
-.range_wrapping{
-    border-bottom: 1.5px solid #000000;
-    height: 59px;
-    margin-top: -16px;
-}
-.range_container {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    margin-left: 12px;
-}
-
-.sliders_control {
-    position: relative;
-    min-height: 12.5px;
-    margin-top: 3px;
-}
-
-.form_control {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    font-size: 22px;
-    color: black;
-}
-
-input[type=range]::-webkit-slider-thumb {
-    pointer-events: all;
-    width: 24px;
-    height: 24px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 50%;
-    box-shadow: 0 0 0 1px black;
-    cursor: pointer;
-}
-
-input[type=range]::-moz-range-thumb {
-    pointer-events: all;
-    width: 24px;
-    height: 24px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 50%;
-    box-shadow: 0 0 0 1px rgb(0, 0, 0);
-    cursor: pointer;  
-}
-
-input[type=range]::-webkit-slider-thumb:hover {
-    box-shadow: inset 0 0 3px #005999, 0 0 6px #005999;
-    -webkit-box-shadow: inset 0 0 6px #005999, 0 0 6px #005999;
-}
-
-input[type=range]::-webkit-slider-thumb:active {
-    box-shadow: inset 0 0 3px #005999, 0 0 6px #005999;
-    -webkit-box-shadow: inset 0 0 3px #005999, 0 0 6px #005999;
-}
-
-input[type="number"] {
-    color: black;
-    width: 40px;
-    height: 35px;
-    font-size: 0.9rem;
-    line-height: 1.0rem;
-    font-family: 'DinCondLight';
-    border: none;
-}
-
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button {  
-    opacity: 1;
-}
-
-input[type="range"] {
-    -webkit-appearance: none; 
-    appearance: none;
-    height: 3px;
-    width: 100%;
     position: absolute;
-    background-color: #005999;
-    pointer-events: none;
-}
-
-#fromSlider {
-    height: 0;
-    z-index: 1;
-}
-
-.range_wrapping1{
-    border-bottom: 1.5px solid #000000;
-    height: 59px;
-    margin-top: -16px;
-}
-.range_container1 {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    margin-left: 12px;
-}
-
-.sliders_control1 {
-    position: relative;
-    min-height: 12.5px;
-}
-
-.form_control1 {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    font-size: 22px;
-    color: black;
-}
-
-#fromSlider1 {
-    height: 0;
-    z-index: 1;
-}
-
-.range_title{  
+  }
+  box_legend {
+    width: 213.5px;
+    height: 86px;
+    margin-top: 193px;
+    margin-left: 22.5px;
+    position: absolute;
+    background-color: white;
+    border: solid rgb(213, 213, 206);
+    border-width: 0.08em;
+  }
+  box_legend span {
+    font-family: "Yandex Sans";
+    color: rgb(117, 117, 117);
+    font-size: 0.7rem;
+    line-height: 0.9em;
+  }
+  box_legend div {
     margin-top: 1px;
-    padding-top: 4px;
-    font-size: 1.2rem;
-    line-height: 1.5rem;
-    font-family: 'DinCondMedium';
-    text-align: left;
-    padding-left: 13px;
-    height: 40px;
-    display: block;  
-}
-
-#withmap{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.container{
-    background-color: #005999;
-}
-
-.header{
-    height: 152px;
-    text-align: center;
-    top: 0;
-}
-
-.logo img{
-    filter: brightness(0) invert(1);
-    text-align: center;
-    float: left;
-    margin-top: 53px;
-    margin-left: 63px;
-    width: 146px;
-    height: 42px;
-}
-
-.text_box{
-    margin-top: 64.25px;
-    white-space: nowrap;
-    margin-left: 42px;
-}
-
-.title{
-    font-family: 'DinCondMedium';
-    color: rgb(28,29,31);
-    font-size: 2.4rem;
-    line-height: 1.2em;
-    display: flex;
-}
-
-#map{
+    display: inline;
+    position: absolute;
+    margin-left: 3px;
+  }
+  box_legend img {
+    margin-top: 3px;
+    margin-left: 25px;
+    width: 15px;
+    height: 15px;
+  }
+  #map {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
     width: 800px;
     height: 450px;
     margin-top: 17.5px;
     display: flex;
-    margin-left: 42px;
+    margin-left: 10px;
     border: solid #005999;
-    position:absolute;
-}
-
-.box_legend{
-    width: 213.5px;
-    height: 86px; 
-    margin-top: 193px;
-    margin-left: 54.5px;
     position: absolute;
-    background-color: white;
-    border: solid rgb(213,213,206);
-    border-width: 0.08em;
-}
-
-.box_legend span{
-    font-family: 'Yandex Sans';
-    color: rgb(117,117,117);
-    font-size: 0.7rem;
-    line-height: 0.9em;
-}
-
-.box_legend div{
-    margin-top: 1px;
-    display:inline;
+  }
+  .charger_param {
+    width: 490px;
+    height: 450px;
+    margin-top: 17.5px;
+    margin-left: 10px;
+    border: 5px solid #005999;
+    border-radius: 3%;
     position: absolute;
-    margin-left: 3px;
-}
-
-.box_legend img{
-    margin-top: 3px;
-    margin-left: 25px; 
-    width: 15px;
-    height: 15px;
-}
-
-.control{
-    position: absolute;
-    display: flex;
-    margin-left: 69.25px;
-    margin-top: 36.25px;
-    justify-content: space-between;
-}
-
-.control input+input{
-    margin-left: 20px;
-}
-
- .start_date{
-    height: 28px;
-    float: left;
-    width: 140px;
-    border: solid rgb(204,204,204);
-    border-width: 0.09em;
-    outline-color: rgb(255,219,77);
-    outline-width: 1.2em;
-    font-family: 'Yandex Sans';
- }
-
- .end_date{
-    height: 28px;
-    width: 140px;
-    float:left;
-    border: solid rgb(204,204,204);
-    border-width: 0.09em;
-    outline-color: rgb(255,219,77);
-    outline-width: 1.2em;
-    font-family: 'Yandex Sans';
-}
-
- #ok{
-    font-family: 'Yandex Sans';
-    color: rgb(102,102,102);
-    font-size: 0.7rem;
-    font-weight: 800;
-    line-height: 0.9em;
-    background-color: white;
-    border: solid rgb(255,219,77);
-    border-width: 0.19em;
-    background-color: rgb(255,219,77);;
-    outline-color: rgb(255,219,77);
-    width: 33.5px;
-    height: 40px;
-    text-align: center;
-    cursor: pointer;
-    float: left;
-    margin-left: 4px;
-    margin-top: -5.5px;
- }
-
-.tire{
-    font-family: 'Yandex Sans';
-    color: rgb(102,102,102);
-    font-size: 1.1rem;
-    font-weight: 1200;
-    line-height: 0.9em;
-    position: absolute;
-    margin-left: 146.5px;
-}
+  }
+}/*# sourceMappingURL=style.css.map */
