@@ -601,15 +601,14 @@ input[type="range"] {
     }
 
 	#map {
-		width: 100%;
-		height: 100%;
 		padding: 0;
 		margin: 0;
-		width: 1452px;
+		width: 746px;
 		height: 560px;
 		margin-top: 17.5px;
 		margin-left: 10px;
 		border: solid #005999;
+		display: inline-block;
 	}
 
 	.routing__legendbox {
