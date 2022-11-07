@@ -1,14 +1,17 @@
 @font-face {
 	font-family: 'DinCondMedium';
 	src: url("..//fonts//DinCondMedium.ttf") format('truetype');
+	font-display: swap;
 }
 @font-face {
 	font-family: 'Yandex Sans';
 	src: url("..//fonts//YandexSansText_Regular.ttf") format('truetype');
+	font-display: swap;
 }
 @font-face {
 	font-family: 'DinCondLight';
 	src: url("..//fonts//DinCondLight.ttf") format('truetype');
+	font-display: swap;
 }
 * {
 	box-sizing: border-box;
@@ -403,6 +406,12 @@ input[type="range"] {
 #fromSlider_price {
 	height: 0;
 	z-index: 1;
+}
+
+.nuipogoda-iframe-informer{
+	width:50px;
+	height:251px;
+	display:block;
 }
 /* */ /* */ /* */ /* */ 
 #routing {
