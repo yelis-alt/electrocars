@@ -1,3 +1,20 @@
+$color: #005999;
+
+%parameter_border {border: 5px solid $color;
+	border-radius: 3%;
+}
+
+%big_title {font-size: 1.8rem;
+	line-height: 2rem;
+	font-family: 'DinCondMedium';
+}	
+			
+%small_title {font-size: 1.6rem;
+	line-height: 1.1rem;
+	font-family: 'DinCondMedium';
+	text-align: left;
+}
+
 @font-face {
 	font-family: 'DinCondMedium';
 	src: url("..//fonts//DinCondMedium.ttf") format('truetype');
@@ -69,12 +86,12 @@ body {
 	}
 	}
 	#defaultOpen {
-		border-bottom: 3.5px solid #005999;
+		border-bottom: 3.5px solid $color;
 	}
 }
 
 .headcontainer {
-	background-color: #005999;
+	background-color: $color;
 	.header {
 		height: 152px;
 		text-align: center;
@@ -96,7 +113,7 @@ body {
 	margin-top: 64.25px;
 	white-space: nowrap;
 	margin-left: 42px;
-	.textbox-title {
+	&-title {
 		font-family: 'DinCondMedium';
 		color: rgb(28,29,31);
 		font-size: 2.4rem;
@@ -105,26 +122,17 @@ body {
 	}
 }
 
-#parameters {
-	display: flex;
-	flex-wrap: wrap;
-	position: absolute;
-}
-
 .charger{
 	width: 700px;
 	height: 450px;
 	margin-top: 17.5px;
 	margin-left: 44px;
-	border: 5px solid #005999;
-	border-radius: 3%;
-	position: absolute;
-	.charger-title {
+	@extend %parameter_border;
+	float: left;
+	&-title {
 		margin-top: 5px;
-		font-size: 1.8rem;
-		line-height: 2rem;
-		font-family: 'DinCondMedium';
-		border-bottom: 5px solid #005999;
+		@extend %big_title;
+		border-bottom: 5px solid $color;
 		text-align: center;
 		height: 40px;
 		display: block;
@@ -132,10 +140,7 @@ body {
 }
 .charger__type-title {
 	padding-top: 5px;
-	font-size: 1.6rem;
-	line-height: 1.1rem;
-	font-family: 'DinCondMedium';
-	text-align: left;
+	@extend %small_title;
 	padding-left: 13px;
 	height: 50px;
 	display: block;
@@ -247,17 +252,6 @@ body {
 	cursor: pointer;
 }
 
-.charger__torrent-title {
-	margin-top: 1px;
-	padding-top: 4px;
-	font-size: 1.6rem;
-	line-height: 1.1rem;
-	font-family: 'DinCondMedium';
-	text-align: left;
-	padding-left: 13px;
-	height: 40px;
-	display: block;
-}
 .charger__torrent {
 	margin-top: -10px;
 	border-bottom: 1.5px solid black;
@@ -275,6 +269,14 @@ body {
 		font-family: 'DinCondLight';
 		vertical-align: middle;
 	}
+	&-title{
+	margin-top: 1px;
+	padding-top: 4px;
+	@extend %small_title;
+	padding-left: 13px;
+	height: 40px;
+	display: block;
+	}
 }
 #charger__torrent {
 	padding-left: 10px;
@@ -284,18 +286,14 @@ body {
 	border-bottom: 1.5px solid #000000;
 	height: 59px;
 	margin-top: -16px;
-}
-.charger__kvt-title,  
-.charger__price-title{
-	margin-top: 1px;
-	padding-top: 4px;
-	font-size: 1.6rem;
-	line-height: 1.1rem;
-	font-family: 'DinCondMedium';
-	text-align: left;
-	padding-left: 13px;
-	height: 40px;
-	display: block;
+	&-title{
+		margin-top: 1px;
+		@extend %small_title;
+		padding-top: 4px;
+		padding-left: 13px;
+		height: 40px;
+		display: block;
+	}
 }
 
 .charger__kvt__container {
@@ -329,12 +327,12 @@ input[type=range] {
 		box-shadow: 0 0 0 1px black;
 		cursor: pointer;
 		&:hover {
-			box-shadow: inset 0 0 3px #005999, 0 0 6px #005999;
-			-webkit-box-shadow: inset 0 0 6px #005999, 0 0 6px #005999;
+			box-shadow: inset 0 0 3px $color, 0 0 6px $color;
+			-webkit-box-shadow: inset 0 0 6px $color, 0 0 6px $color;
 		}
 		&:active {
-			box-shadow: inset 0 0 3px #005999, 0 0 6px #005999;
-			-webkit-box-shadow: inset 0 0 3px #005999, 0 0 6px #005999;
+			box-shadow: inset 0 0 3px $color, 0 0 6px $color;
+			-webkit-box-shadow: inset 0 0 3px $color, 0 0 6px $color;
 		}
 	}
 	&::-moz-range-thumb {
@@ -370,7 +368,7 @@ input[type="range"] {
 	height: 3px;
 	width: 100%;
 	position: absolute;
-	background-color: #005999;
+	background-color: $color;
 	pointer-events: none;
 }
 #fromSlider_kvt {
@@ -381,12 +379,20 @@ input[type="range"] {
 .charger__price {
 	height: 59px;
 	margin-top: -16px;
-}
-.charger__price__container {
+	&__container {
 	display: flex;
 	flex-direction: column;
     width: 96%;
 	margin-left: 12px;
+	}
+	&-title{
+		margin-top: 1px;
+		@extend %small_title;
+		padding-top: 4px;
+		padding-left: 13px;
+		height: 40px;
+		display: block;
+	}
 }
 
 .charger__price__container__control{
@@ -413,6 +419,70 @@ input[type="range"] {
 	height:251px;
 	display:block;
 }
+
+.weather{
+	margin-top: 17.5px;
+	margin-left: 50px;
+	float: left;
+	width: 641.5px;
+	height: 300px;
+	@extend %parameter_border;
+	&-title {
+		margin-top: 5px;
+		@extend %big_title;
+		border-bottom: 5px solid $color;
+		text-align: center;
+		height: 40px;
+		display: block;
+		}
+	}
+
+.weather__temp{
+	flex-direction: row; 
+	justify-content: flex-start; 
+	flex-wrap: wrap; 
+	&-title {
+		margin-top: 1px;
+		@extend %small_title;
+		padding-top: 8px;
+		padding-left: 13px;
+		height: 40px;
+		float: left;
+	}
+	&-grad{
+		font-size: 1.4rem;
+		line-height: 1.1rem;
+		font-family: 'DinCondMedium';
+		text-align: left;
+		float: left;
+		color: $color;
+		margin-top: 11px;
+		margin-left: 1px;
+		font-weight: 600;
+	}
+	&-number{
+		float: left;
+		margin-left: 4px;
+		margin-top:2px;
+		background-color: transparent;
+		font-size: 10rem;
+		&:focus{
+			outline: none;
+		}
+		&::-webkit-inner-spin-button {
+			-webkit-appearance: none;
+			margin: 0;
+		  }
+	}
+	input[type=number] {
+		font-size: 1.2rem;
+		line-height: 1.2rem;
+		color: $color;
+		font-family: 'DinCondMedium';
+		font-weight: 600;
+		}
+}
+
 /* */ /* */ /* */ /* */ 
 #routing {
 	display: flex;
@@ -429,7 +499,7 @@ input[type="range"] {
 	margin-top: 17.5px;
 	display: flex;
 	margin-left: 42px;
-	border: solid #005999;
+	border: solid $color;
 	position: absolute;
 }
 
@@ -524,7 +594,7 @@ input[type="range"] {
 
 @media (max-width: 1024px) {
 	.headcontainer {
-		background-color: #005999;
+		background-color: $color;
 		.header {
 			height: 60.8px;
 			text-align: center;
@@ -582,7 +652,7 @@ input[type="range"] {
 		}
 		}
 		#defaultOpen {
-			border-bottom: 3.5px solid #005999;
+			border-bottom: 3.5px solid $color;
 		}
 	}
 
@@ -604,7 +674,7 @@ input[type="range"] {
         height: 450px;
         margin-top: 17.5px;
         margin-left: 10px;
-        border: 5px solid #005999;
+        border: 5px solid $color;
         border-radius: 3%;
         position: absolute;
     }
@@ -616,7 +686,7 @@ input[type="range"] {
 		height: 560px;
 		margin-top: 17.5px;
 		margin-left: 10px;
-		border: solid #005999;
+		border: solid $color;
 		display: inline-block;
 	}
 
