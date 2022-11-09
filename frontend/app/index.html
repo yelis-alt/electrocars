@@ -117,9 +117,21 @@
                 <div class = "weather__temp-title">
                     Усреднённая температура в течение недели:
                 </div>
-                <input class = "weather__temp-number" type="number"/>
+                <input class = "weather__temp-number" type="number" onkeydown="this.style.width = ((this.value.length + 2) * 8) + 'px';"/>
                 <div class = "weather__temp-grad">
                     °C
+                </div>
+                <div class = "weather__temp-explanation_first">
+                    *Диапозон темпратур от -30 до -20 увеличивает расход электричества на 100 км на 30%; 
+                </div>
+                <div class = "weather__temp-explanation_second">
+                    *Диапозон темпратур от -20 до -10 увеличивает расход электричества на 100 км на 20%; 
+                </div>
+                <div class = "weather__temp-explanation_third">
+                    *Диапозон темпратур от -10 до 0 увеличивает расход электричества на 100 км на 10%;
+                </div>
+                <div class = "weather__temp-explanation_fourth">
+                    *Диапозон темпратур от 0 до 10 увеличивает расход электричества на 100 км на 5%;
                 </div>
             </div>  
         </div>
