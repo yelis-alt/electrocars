@@ -131,7 +131,21 @@
                     *Диапозон темпратур от -10 до 0 увеличивает расход электричества на 100 км на 10%;
                 </div>
                 <div class = "weather__temp-explanation_fourth">
-                    *Диапозон темпратур от 0 до 10 увеличивает расход электричества на 100 км на 5%;
+                    *Диапозон темпратур от 0 до 10 увеличивает расход электричества на 100 км на 5%.
+                </div>
+            </div>  
+        </div>
+         <div class="spending">
+            <div class = "spending-title">
+                Расход электричества
+            </div> 
+            <div class="spending__temp">
+                <div class = "spending__temp-title">
+                    Потребление на 100 км с учётом погодных условий:
+                </div>
+                <input class = "spending__temp-number" type="number" onkeydown="this.style.width = ((this.value.length + 2) * 8) + 'px';"/>
+                <div class = "spending__temp-grad">
+                    кВт/ч
                 </div>
             </div>  
         </div>
