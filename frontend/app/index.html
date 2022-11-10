@@ -109,6 +109,20 @@
                     </div>
                 </div>
         </div>
+        <div class="accumulator">
+            <div class = "accumulator-title">
+                Аккумулятор
+            </div> 
+            <div class="accumulator__temp">
+                <div class = "accumulator__temp-title">
+                    Примерный текущий уровень заряда батареи:
+                </div>
+                <input class = "accumulator__temp-number" type="number"  onkeydown="this.style.width = ((this.value.length + 4) * 8) + 'px';"//>
+                <div class = "accumulator__temp-grad">
+                    кВт*ч
+                </div>
+            </div>  
+        </div>
         <div class="weather">
             <div class = "weather-title">
                 Погодные условия
@@ -122,7 +136,7 @@
                     °C
                 </div>
                 <div class = "weather__temp-explanation_first">
-                    *Диапозон темпратур от -30 до -20 увеличивает расход электричества на 100 км на 30%; 
+                    *Диапозон темпратур до -20 увеличивает расход электричества на 100 км на 30%; 
                 </div>
                 <div class = "weather__temp-explanation_second">
                     *Диапозон темпратур от -20 до -10 увеличивает расход электричества на 100 км на 20%; 
@@ -143,9 +157,9 @@
                 <div class = "spending__temp-title">
                     Потребление на 100 км с учётом погодных условий:
                 </div>
-                <input class = "spending__temp-number" type="number" onkeydown="this.style.width = ((this.value.length + 2) * 8) + 'px';"/>
+                <input class = "spending__temp-number" type="number"/>
                 <div class = "spending__temp-grad">
-                    кВт/ч
+                    кВт*ч
                 </div>
             </div>  
         </div>

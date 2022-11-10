@@ -37,7 +37,8 @@ function scripts() {
         'app/js/map.js',
         'app/js/ranger.js',
         'app/js/tabs.js',
-        'app/js/tethers.js'
+        'app/js/tethers.js',
+        'app/js/weather.js'
     ])
     .pipe(concat('main.min.js'))
     .pipe(uglify())

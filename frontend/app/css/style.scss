@@ -432,13 +432,77 @@ input[type="range"] {
 	display:block;
 }
 
-.weather{
-	margin-top: 17.5px;
+.accumulator{
+	margin-top: 16px;
 	margin-left: 50px;
 	float: left;
 	width: 641.5px;
-	height: 230px;
+	height: 110px;
 	@extend %parameter_border;
+	border-radius: 5%;
+
+	&-title {
+		margin-top: 6.5px;
+		@extend %big_title;
+		border-bottom: 5px solid $color;
+		text-align: center;
+		height: 40px;
+		display: block;
+		}
+	}
+
+.accumulator__temp{
+	flex-direction: row; 
+	justify-content: flex-start; 
+	flex-wrap: wrap; 
+
+	&-title {
+		margin-top: 1px;
+		@extend %small_title;
+		padding-top: 18px;
+		padding-left: 49.5px;
+		height: 40px;
+		float: left;
+		font-size: 1.5rem;
+		line-height: 1.2rem;
+	}
+
+	&-number{
+		float: left;
+		margin-top: 12px;
+		margin-left: 3px;
+	}
+
+	input[type=number] {
+		font-size: 1.2rem;
+		line-height: 1.2rem;
+		font-family: 'DinCondMedium';
+		font-weight: 600;
+		background-color: rgb(198,198,198);
+		border: 1px solid rgb(0, 0, 0);
+	}
+
+	&-grad{
+		font-size: 1.2rem;
+		line-height: 1.0rem;
+		font-family: 'DinCondMedium';
+		text-align: left;
+		float: left;
+		margin-top: 22px;
+		font-weight: 600;
+		margin-left: 3px;
+	}
+}
+
+.weather{
+	margin-top: 15.5px;
+	margin-left: 50px;
+	float: left;
+	width: 641.5px;
+	height: 200px;
+	@extend %parameter_border;
+	border-radius: 5%;
+
 	&-title {
 		margin-top: 5px;
 		@extend %big_title;
@@ -466,9 +530,8 @@ input[type="range"] {
 	&-number{
 		float: left;
 		margin-left: px;
-		margin-top:2px;
+		margin-top:2.5px;
 		background-color: transparent;
-		font-size: 10rem;
 		margin-left: 3px;
 
 		&::-webkit-inner-spin-button {
@@ -496,12 +559,13 @@ input[type="range"] {
 		text-align: left;
 		float: left;
 		color: $color;
-		margin-top: 12px;
+		margin-top: 12.5px;
 		font-weight: 600;
 	}
 
 	&-explanation_first { 
 		@extend %explanations;
+		margin-top: -8px;
 
 	}
 
@@ -519,15 +583,16 @@ input[type="range"] {
 }
 
 .spending{
-	margin-top: 17.5px;
+	margin-top: 16px;
 	margin-left: 50px;
 	float: left;
 	width: 641.5px;
-	height: 203px;
+	height: 110px;
 	@extend %parameter_border;
+	border-radius: 5%;
 
 	&-title {
-		margin-top: 5px;
+		margin-top: 6.5px;
 		@extend %big_title;
 		border-bottom: 5px solid $color;
 		text-align: center;
@@ -544,8 +609,8 @@ input[type="range"] {
 	&-title {
 		margin-top: 1px;
 		@extend %small_title;
-		padding-top: 65.5px;
-		padding-left: 45px;
+		padding-top: 18px;
+		padding-left: 43.5px;
 		height: 40px;
 		float: left;
 		font-size: 1.5rem;
@@ -554,9 +619,8 @@ input[type="range"] {
 
 	&-number{
 		float: left;
-		margin-top: 59px;
+		margin-top: 12px;
 		background-color: transparent;
-		font-size: 10rem;
 		margin-left: 3px;
 
 		&::-webkit-inner-spin-button {
@@ -584,8 +648,9 @@ input[type="range"] {
 		text-align: left;
 		float: left;
 		color: $color;
-		margin-top: 69px;
+		margin-top: 22.5px;
 		font-weight: 600;
+		margin-left: -15px;
 	}
 }
 /* */ /* */ /* */ /* */ 
@@ -832,6 +897,236 @@ input[type="range"] {
 		justify-content: space-between;
 		input+input {
 			margin-left: 20px;
+		}
+	}
+
+	.accumulator{
+		margin-top: 481.5px;
+		margin-left: 10px;
+		float: left;
+		width: 490px;
+		height: 110px;
+		@extend %parameter_border;
+		border-radius: 5%;
+	
+		&-title {
+			margin-top: 6.5px;
+			@extend %big_title;
+			border-bottom: 5px solid $color;
+			text-align: center;
+			height: 40px;
+			display: block;
+			}
+		}
+	
+	.accumulator__temp{
+		flex-direction: row; 
+		justify-content: flex-start; 
+		flex-wrap: wrap; 
+	
+		&-title {
+			margin-top: 1px;
+			@extend %small_title;
+			padding-top: 16px;
+			padding-left: 10px;
+			height: 40px;
+			float: left;
+			font-size: 1.3rem;
+			line-height: 1.2rem;
+		}
+	
+		&-number{
+			float: left;
+			margin-top: 19px;
+			margin-left: 3px;
+		}
+	
+		input[type=number] {
+			background-color: rgb(198,198,198);
+			border: 1px solid rgb(0, 0, 0);
+			font-size: 0.9rem;
+			line-height: 0.9rem;
+			font-family: 'DinCondMedium';
+			font-weight: 600;
+			height: 20px;
+		}
+	
+		&-grad{
+			font-size: 1.0rem;
+			line-height: 1.0rem;
+			font-family: 'DinCondMedium';
+			text-align: left;
+			float: left;
+			margin-top: 20px;
+			font-weight: 600;
+		}
+	}
+
+	.weather{
+		margin-top: 14px;
+		margin-left: 10px;
+		float: left;
+		width: 490px;
+		height: 200px;
+		@extend %parameter_border;
+		border-radius: 5%;
+	
+		&-title {
+			margin-top: 5px;
+			@extend %big_title;
+			border-bottom: 5px solid $color;
+			text-align: center;
+			height: 40px;
+			display: block;
+			}
+		}
+	
+	.weather__temp{
+		flex-direction: row; 
+		justify-content: flex-start; 
+		flex-wrap: wrap; 
+	
+		&-title {
+			margin-top: 1px;
+			@extend %small_title;
+			padding-top: 8px;
+			padding-left: 24.5px;
+			height: 40px;
+			float: left;
+			font-size: 1.4rem;
+			line-height: 1.2rem;
+		}
+	
+		&-number{
+			float: left;
+			margin-top: 2.5px;
+			background-color: transparent;
+			margin-left: 3px;
+	
+			&::-webkit-inner-spin-button {
+				-webkit-appearance: none;
+				margin: 0;
+			  }
+			
+			&:focus{
+				outline: none;
+			}
+		}
+	
+		input[type=number] {
+			font-size: 1.1rem;
+			line-height: 1.1rem;
+			color: $color;
+			font-family: 'DinCondMedium';
+			font-weight: 600;
+		}
+	
+		&-grad{
+			font-size: 1.2rem;
+			line-height: 1.0rem;
+			font-family: 'DinCondMedium';
+			text-align: left;
+			float: left;
+			color: $color;
+			margin-top: 12px;
+			font-weight: 600;
+		}
+	
+		&-explanation_first { 
+			@extend %explanations;
+			font-size: 0.85rem;
+			line-height: 0.9rem;
+			padding-top: 5px;
+	
+		}
+	
+		&-explanation_second { 
+			@extend %explanations;
+			font-size: 0.85rem;
+			line-height: 0.9rem;
+		}
+	
+		&-explanation_third { 
+			@extend %explanations;
+			font-size: 0.85rem;
+			line-height: 0.9rem;
+		}
+	
+		&-explanation_fourth { 
+			@extend %explanations;
+			font-size: 0.85rem;
+			line-height: 0.9rem;
+		}
+	}
+	
+	.spending{
+		margin-top: 14px;
+		margin-left: 10px;
+		float: left;
+		width: 490px;
+		height: 203px;
+		@extend %parameter_border;
+		border-radius: 5%;
+	
+		&-title {
+			margin-top: 5px;
+			@extend %big_title;
+			border-bottom: 5px solid $color;
+			text-align: center;
+			height: 40px;
+			display: block;
+			}
+		}
+	
+	.spending__temp{
+		flex-direction: row; 
+		justify-content: flex-start; 
+		flex-wrap: wrap; 
+	
+		&-title {
+			margin-top: 1px;
+			@extend %small_title;
+			padding-top: 65.5px;
+			padding-left: 14px;
+			height: 40px;
+			float: left;
+			font-size: 1.2rem;
+			line-height: 1.1rem;
+		}
+	
+		&-number{
+			float: left;
+			margin-top: 58px;
+			background-color: transparent;
+	
+			&::-webkit-inner-spin-button {
+				-webkit-appearance: none;
+				margin: 0;
+			  }
+			
+			&:focus{
+				outline: none;
+			}
+		}
+	
+		input[type=number] {
+			font-size: 1.1rem;
+			line-height: 1.1rem;
+			color: $color;
+			font-family: 'DinCondMedium';
+			font-weight: 600;
+		}
+	
+		&-grad{
+			font-size: 1.1rem;
+			line-height: 1.1rem;
+			font-family: 'DinCondMedium';
+			text-align: left;
+			float: left;
+			color: $color;
+			margin-top: 67px;
+			font-weight: 600;
+			padding-left: -2px;
 		}
 	}
 }
