@@ -7,7 +7,6 @@ const browserSync = require('browser-sync');
 const imagemin = require('gulp-imagemin');
 const del = require('del');
 
-
 function browsersync() {
     browserSync.init({
         server: {
@@ -38,6 +37,7 @@ function scripts() {
         'app/js/ranger.js',
         'app/js/tabs.js',
         'app/js/tethers.js',
+        'app/js/spending.js',
         'app/js/weather.js'
     ])
     .pipe(concat('main.min.js'))
@@ -63,7 +63,9 @@ function images() {
 function build() {
    return src(['app/**/*.html',
            'app/css/style.min.css',
-           'app/js/main.min.js'], {base:'app'})
+           'app/js/main.min.js',
+           'app/fonts/*.ttf',
+           'app/php/weather.php'], {base:'app'})
     .pipe(dest('dist'))
 }
 
