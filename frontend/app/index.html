@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang = "ru">
 <head>
+    <meta charset="UTF-8">
     <title>Service_interface</title>
     <meta name = "viewpoint" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="css/style.min.css">
@@ -108,6 +109,7 @@
                         </div>
                     </div>
                 </div>
+            </form>
         </div>
         <div class="accumulator">
             <div class = "accumulator-title">
@@ -117,7 +119,7 @@
                 <div class = "accumulator__temp-title">
                     Примерный текущий уровень заряда батареи:
                 </div>
-                <input class = "accumulator__temp-number" type="number" min = "0" onkeydown="this.style.width = ((this.value.length + 4) * 8) + 'px';"//>
+                <input class = "accumulator__temp-number" type="number" min = "0" onkeydown="this.style.width = ((this.value.length + 4) * 8) + 'px';"/>
                 <div class = "accumulator__temp-grad">
                     кВт*ч
                 </div>
@@ -131,7 +133,7 @@
                 <div class = "weather__temp-title">
                     Усреднённая температура в течение дня:
                 </div>
-                <input class = "weather__temp-number" type="number" onkeydown="this.style.width = ((this.value.length + 2) * 8) + 'px';"/>
+                <input class = "weather__temp-number" type="number"/>
                 <div class = "weather__temp-grad">
                     °C
                 </div>
@@ -164,7 +166,7 @@
                       <option value="Арзамас">Арзамас</option>
                       <option value="Армавир">Армавир</option>
                       <option value="Арсеньев">Арсеньев</option>
-                      <option value="Артем">Артем</option>
+                      <option value="Артём">Артём</option>
                       <option value="Архангельск">Архангельск</option>
                       <option value="Асбест">Асбест</option>
                       <option value="Астрахань">Астрахань</option>
@@ -360,7 +362,7 @@
                       <option value="Озерск (Челябинская область)">Озерск (Челябинская область)</option>
                       <option value="Октябрьский">Октябрьский</option>
                       <option value="Омск">Омск</option>
-                      <option value="Орел">Орел</option>
+                      <option value="Орёл">Орёл</option>
                       <option value="Оренбург">Оренбург</option>
                       <option value="Орехово-Зуево">Орехово-Зуево</option>
                       <option value="Орск">Орск</option>
@@ -522,6 +524,7 @@
             </div>
         </div>
         <div class="routing__control">
+            <form>
                 <input type="datetime-local" id="firstDate" class = "routing__control-start" name="date_trip"/>
                 <input type="datetime-local" id="secondDate" class = "routing__control-end" name="date_trip"/>
                 <div class="routing__control-tire">
