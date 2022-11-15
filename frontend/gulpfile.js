@@ -3,18 +3,8 @@ const scss = require('gulp-sass')(require('sass'));
 const concat = require('gulp-concat');
 const autoprefixer = require('gulp-autoprefixer');
 const uglify = require('gulp-uglify');
-const browserSync = require('browser-sync');
 const imagemin = require('gulp-imagemin');
 const del = require('del');
-
-function browsersync() {
-    browserSync.init({
-        server: {
-            baseDir: 'app/'
-        },
-        notify: false
-    })
-}
 
 function styles() {
     return src(['app/css/reset.scss',
@@ -69,24 +59,14 @@ function build() {
     .pipe(dest('dist'))
 }
 
-function watching() {
-    watch(['app/scss/**/*.scss'], styles);
-    watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
-    watch(['app/**/*.html']).on('change', browserSync.reload);
-}
-
 function cleanDist(){
     return del('dist')
 }
 
 exports.styles = styles;
 exports.scripts = scripts;
-exports.browsersync = browsersync;
-exports.watching = watching;
-exports.images = images;
 exports.build = build;
-exports.cleanDist = cleanDist;
 
 exports.build = series(cleanDist, images, build);
 
-exports.default = parallel(styles, scripts, browsersync, watching);
+exports.all = parallel(styles, scripts);
