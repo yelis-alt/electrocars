@@ -245,7 +245,6 @@ function requ() {
     url: "/app/php/weather.php",
     data: {city: target},
     success: function(data) {
-        alert(data);
         $(".weather__temp-number").val(data); 
         $('.weather__temp-number').each(function(){
             var value = $(this).val();

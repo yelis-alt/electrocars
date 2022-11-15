@@ -14,6 +14,9 @@ function getWeatherDataXml($cache_life, $city) {
     }
     $xml = simplexml_load_file($cache_file);
     $weather['temp'] = $xml->weather->day->day_part[0]->temperature;
+    if (substr($weather['temp'], 0, 1) == '+') {
+        $weather['temp'] = ltrim($weather['temp'], '+');
+    };
     return $weather['temp'];
 }
 $weather = getWeatherDataXml(3600, $_POST['city']);
