@@ -1,7 +1,7 @@
 <?php
 function getWeatherDataXml($cache_life, $city) {
     $weather = array();
-    $cache_file = $_SERVER['DOCUMENT_ROOT']."/app/php/weather.txt";
+    $cache_file = $_SERVER['DOCUMENT_ROOT']."/php/weather.txt";
     $url='http://export.yandex.ru/bar/reginfo.xml?region='.$city.'.xml';
     if (time() - @filemtime($cache_file) >= $cache_life) {
         $ch = curl_init($url);
@@ -20,7 +20,7 @@ function getWeatherDataXml($cache_life, $city) {
     return $weather['temp'];
 }
 $weather = getWeatherDataXml(3600, $_POST['city']);
-$path = $_SERVER['DOCUMENT_ROOT']."/app/php/weather.txt";
+$path = $_SERVER['DOCUMENT_ROOT']."/php/weather.txt";
 unlink($path);
 echo $weather;
 ?>

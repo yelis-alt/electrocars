@@ -242,7 +242,7 @@ var target = dict[$('.city-select').val()]
 function requ() {
 	$.ajax({
     method: "POST",
-    url: "/app/php/weather.php",
+    url: "/php/weather.php",
     data: {city: target},
     success: function(data) {
         $(".weather__temp-number").val(data); 
