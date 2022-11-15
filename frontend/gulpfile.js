@@ -1,4 +1,4 @@
-const {src, dest, watch, parallel, series} = require('gulp');
+const {src, dest, parallel, series} = require('gulp');
 const scss = require('gulp-sass')(require('sass'));
 const concat = require('gulp-concat');
 const autoprefixer = require('gulp-autoprefixer');
@@ -16,7 +16,6 @@ function styles() {
         grid: true
     }))
     .pipe(dest('app/css'))
-    .pipe(browserSync.stream())
 }
 
 function scripts() {
@@ -33,7 +32,6 @@ function scripts() {
     .pipe(concat('main.min.js'))
     .pipe(uglify())
     .pipe(dest('app/js'))
-    .pipe(browserSync.stream())
 }
 
 function images() {
@@ -65,8 +63,9 @@ function cleanDist(){
 
 exports.styles = styles;
 exports.scripts = scripts;
+exports.cleanDist = cleanDist;
+exports.images = images;
 exports.build = build;
 
 exports.build = series(cleanDist, images, build);
-
 exports.all = parallel(styles, scripts);

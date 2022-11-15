@@ -246,11 +246,9 @@ function requ() {
     data: {city: target},
     success: function(data) {
         $(".weather__temp-number").val(data); 
-        $('.weather__temp-number').each(function(){
-            var value = $(this).val();
-            var size  = value.length;
-            $(this).css('width',size*14);
-            });
+        var value = $('.weather__temp-number').val();
+        var size  = value.length;
+        $(".weather__temp input[type=number]").css('width',(size+2)*6);
     if ($('.weather__temp-number').val() <= -20)
         {
             $('.spending__temp-number').val(20*1.3);
