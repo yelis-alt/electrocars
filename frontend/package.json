@@ -23,7 +23,8 @@
     "sass": "^1.55.0"
   },
   "dependencies": {
-    "node-fetch": "^2.6.1"
+    "node-fetch": "^2.6.1",
+    "normalize.css": "^8.0.1"
   },
   "description": ""
 }

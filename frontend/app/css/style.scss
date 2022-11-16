@@ -24,7 +24,7 @@ white-space: nowrap;
 margin-left: 5px;
 display: inline-block;
 width: 95%;
-padding-top: 5px;
+padding-top: 3px;
 }
 
 @font-face {
@@ -41,21 +41,6 @@ padding-top: 5px;
 	font-family: 'DinCondLight';
 	src: url("..//fonts//DinCondLight.ttf") format('truetype');
 	font-display: swap;
-}
-* {
-	box-sizing: border-box;
-}
-html {
-	width: 100%;
-	height: 100%;
-	padding: 0;
-	margin: 0;
-}
-body {
-	width: 100%;
-	height: 100%;
-	padding: 0;
-	margin: 0;
 }
 
 .tabs {
@@ -279,7 +264,7 @@ body {
         font-size: 1.4rem;;
         line-height: 1.1rem;
 		font-family: 'DinCondLight';
-		vertical-align: middle;
+		vertical-align: center;
 	}
 	&-title{
 	margin-top: 1px;
@@ -469,7 +454,7 @@ input[type="range"] {
 
 	&-number{
 		float: left;
-		margin-top: 12px;
+		margin-top: 13px;
 		margin-left: 3px;
 	}
 
@@ -529,10 +514,9 @@ input[type="range"] {
 
 	&-number{
 		float: left;
-		margin-left: px;
-		margin-top:2.5px;
+		margin-top: 2.5px;
 		background-color: transparent;
-		margin-left: 3px;
+		margin-left: 5px;
 
 		&::-webkit-inner-spin-button {
 			-webkit-appearance: none;
@@ -559,7 +543,7 @@ input[type="range"] {
 		text-align: left;
 		float: left;
 		color: $color;
-		margin-top: 12.5px;
+		margin-top: 11.5px;
 		font-weight: 600;
 	}
 
@@ -581,15 +565,21 @@ input[type="range"] {
 	}
 }
 
-.city-select{
-	margin-left: 466px;
-	margin-top: 2px;
-	width: 150px;
-	background: rgb(241, 241, 241);
-	font-size: 1.0rem;
-	line-height: 1.0rem;
-	font-family: 'DinCondMedium';
-	font-weight: 600;
+.city{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1.5px;
+
+	&-select {
+		width: 150px;
+		background: rgb(241, 241, 241);
+		font-size: 1.0rem;
+		line-height: 1.0rem;
+		font-family: 'DinCondMedium';
+		font-weight: 600;
+		border: solid 1.5px black;
+	}
 }
 
 .spending{
@@ -629,9 +619,9 @@ input[type="range"] {
 
 	&-number{
 		float: left;
-		margin-top: 12px;
+		margin-top: 12.5px;
 		background-color: transparent;
-		margin-left: 3px;
+		margin-left: 4.5px;
 
 		&::-webkit-inner-spin-button {
 			-webkit-appearance: none;
@@ -658,9 +648,9 @@ input[type="range"] {
 		text-align: left;
 		float: left;
 		color: $color;
-		margin-top: 22.5px;
+		margin-top: 22px;
 		font-weight: 600;
-		margin-left: -15px;
+		margin-left: -16.5px;
 	}
 }
 /* */ /* */ /* */ /* */ 
@@ -686,7 +676,7 @@ input[type="range"] {
 .routing__legendbox {
 	width: 213.5px;
 	height: 86px;
-	margin-top: 193px;
+	margin-top: 194px;
 	margin-left: 54.5px;
 	position: absolute;
 	background-color: white;
@@ -730,6 +720,9 @@ input[type="range"] {
 	outline-color: rgb(255,219,77);
 	outline-width: 1.2em;
 	font-family: 'Yandex Sans';
+	font-size: 14.3px;
+	line-height: 14.3px;
+	background-color: white;
 }
 .routing__control-end {
 	height: 28px;
@@ -740,6 +733,9 @@ input[type="range"] {
 	outline-color: rgb(255,219,77);
 	outline-width: 1.2em;
 	font-family: 'Yandex Sans';
+	font-size: 14.3px;
+	line-height: 14.3px;
+	background-color: white;
 }
 
 .routing__control-tire {
@@ -764,12 +760,12 @@ input[type="range"] {
 	background-color: rgb(255,219,77);
 	outline-color: rgb(255,219,77);
 	width: 33.5px;
-	height: 40px;
+	height: 39px;
 	text-align: center;
 	cursor: pointer;
 	float: left;
 	margin-left: 4px;
-	margin-top: -6px;
+	margin-top: -5px;
 }
 
 @media (max-width: 1024px) {
@@ -874,7 +870,7 @@ input[type="range"] {
 		width: 213.5px;
 		height: 86px;
 		margin-top: 193px;
-		margin-left: 22px;
+		margin-left: 23px;
 		position: absolute;
 		background-color: white;
 		border: solid rgb(213,213,206);
@@ -947,7 +943,7 @@ input[type="range"] {
 	
 		&-number{
 			float: left;
-			margin-top: 19px;
+			margin-top: 19.5px;
 			margin-left: 3px;
 		}
 	
@@ -1011,7 +1007,7 @@ input[type="range"] {
 			float: left;
 			margin-top: 2.5px;
 			background-color: transparent;
-			margin-left: 3px;
+			margin-left: 5px;
 	
 			&::-webkit-inner-spin-button {
 				-webkit-appearance: none;
@@ -1038,7 +1034,7 @@ input[type="range"] {
 			text-align: left;
 			float: left;
 			color: $color;
-			margin-top: 12px;
+			margin-top: 11px;
 			font-weight: 600;
 		}
 	
@@ -1068,17 +1064,25 @@ input[type="range"] {
 			line-height: 0.9rem;
 		}
 
-		.city-select{
-			margin-left: 357px;
-			margin-top: 5px;
+	.city{
+		display:flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 4px;
+
+		&-select {
 			width: 120px;
+			height: 21px;
 			background: rgb(241, 241, 241);
 			font-size: 0.9rem;
 			line-height: 0.9rem;
 			font-family: 'DinCondMedium';
 			font-weight: 600;
+			border: solid 1.5px black;
+			vertical-align: center;
 		}
 	}
+}
 	
 	.spending{
 		margin-top: 14px;
@@ -1117,7 +1121,7 @@ input[type="range"] {
 	
 		&-number{
 			float: left;
-			margin-top: 58px;
+			margin-top: 58.5px;
 			background-color: transparent;
 	
 			&::-webkit-inner-spin-button {
@@ -1145,9 +1149,9 @@ input[type="range"] {
 			text-align: left;
 			float: left;
 			color: $color;
-			margin-top: 67px;
+			margin-top: 67.5px;
 			font-weight: 600;
-			padding-left: -2px;
+			padding-left: -4px;
 		}
 	}
 }

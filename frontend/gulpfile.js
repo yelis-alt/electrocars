@@ -1,4 +1,4 @@
-const {src, dest, parallel, series} = require('gulp');
+const {src, dest, watch, parallel, series} = require('gulp');
 const scss = require('gulp-sass')(require('sass'));
 const concat = require('gulp-concat');
 const autoprefixer = require('gulp-autoprefixer');
@@ -26,7 +26,6 @@ function scripts() {
         'app/js/ranger.js',
         'app/js/tabs.js',
         'app/js/tethers.js',
-        'app/js/spending.js',
         'app/js/weather.js'
     ])
     .pipe(concat('main.min.js'))
@@ -51,10 +50,13 @@ function images() {
 function build() {
    return src(['app/**/*.html',
            'app/css/style.min.css',
-           'app/js/main.min.js',
-           'app/fonts/*.ttf',
-           'app/php/weather.php'], {base:'app'})
+           'app/js/main.min.js'], {base:'app'})
     .pipe(dest('dist'))
+}
+
+function watching() {
+    watch(['app/css/**/*.scss'], styles);
+    watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
 }
 
 function cleanDist(){
@@ -63,9 +65,11 @@ function cleanDist(){
 
 exports.styles = styles;
 exports.scripts = scripts;
-exports.cleanDist = cleanDist;
+exports.watching = watching;
 exports.images = images;
 exports.build = build;
+exports.cleanDist = cleanDist;
 
 exports.build = series(cleanDist, images, build);
-exports.all = parallel(styles, scripts);
+
+exports.watch = parallel(styles, scripts, watching);
