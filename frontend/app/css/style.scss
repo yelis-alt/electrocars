@@ -5,18 +5,15 @@ $color: #005999;
 }
 
 %big_title {font-size: 1.8rem;
-	line-height: 2rem;
 	font-family: 'DinCondMedium';
 }	
 			
 %small_title {font-size: 1.6rem;
-	line-height: 1.1rem;
 	font-family: 'DinCondMedium';
 	text-align: left;
 }
 
 %explanations {font-size: 1.1rem;
-line-height: 1.0rem;
 font-family: 'DinCondMedium';
 font-weight: 200;
 color: rgb(117,117,117);
@@ -24,7 +21,6 @@ white-space: nowrap;
 margin-left: 5px;
 display: inline-block;
 width: 95%;
-padding-top: 3px;
 }
 
 @font-face {
@@ -114,7 +110,6 @@ padding-top: 3px;
 		font-family: 'DinCondMedium';
 		color: rgb(28,29,31);
 		font-size: 2.4rem;
-		line-height: 1.1em;
 		display: flex;
 	}
 }
@@ -255,20 +250,19 @@ padding-top: 3px;
     height: 32px;
     div{
         display: inline-block;
-        margin-top: 5px;
+		margin-top: 2px;
     }
     div+div{
         margin-left: 70px;
     }
 	label {
         font-size: 1.4rem;;
-        line-height: 1.1rem;
 		font-family: 'DinCondLight';
 		vertical-align: center;
 	}
 	&-title{
 	margin-top: 1px;
-	padding-top: 4px;
+	padding-top: 2px;
 	@extend %small_title;
 	padding-left: 13px;
 	height: 40px;
@@ -347,7 +341,6 @@ input[type="number"] {
 	width: 40px;
 	height: 35px;
 	font-size: 1.0rem;
-	line-height: 1.0rem;
 	font-family: 'DinCondLight';
 	border: none;
 }
@@ -442,25 +435,23 @@ input[type="range"] {
 	flex-wrap: wrap; 
 
 	&-title {
-		margin-top: 1px;
+		margin-top: -6px;
 		@extend %small_title;
 		padding-top: 18px;
 		padding-left: 49.5px;
 		height: 40px;
 		float: left;
 		font-size: 1.5rem;
-		line-height: 1.2rem;
 	}
 
 	&-number{
 		float: left;
-		margin-top: 13px;
+		margin-top: 10px;
 		margin-left: 3px;
 	}
 
 	input[type=number] {
 		font-size: 1.2rem;
-		line-height: 1.2rem;
 		font-family: 'DinCondMedium';
 		font-weight: 600;
 		background-color: rgb(241,241,241);
@@ -469,11 +460,10 @@ input[type="range"] {
 
 	&-grad{
 		font-size: 1.2rem;
-		line-height: 1.0rem;
 		font-family: 'DinCondMedium';
 		text-align: left;
 		float: left;
-		margin-top: 22px;
+		margin-top: 16px;
 		font-weight: 600;
 		margin-left: 3px;
 	}
@@ -504,7 +494,7 @@ input[type="range"] {
 	flex-wrap: wrap; 
 
 	&-title {
-		margin-top: 1px;
+		margin-top: -8px;
 		@extend %small_title;
 		padding-top: 8px;
 		padding-left: 90px;
@@ -514,7 +504,7 @@ input[type="range"] {
 
 	&-number{
 		float: left;
-		margin-top: 2.5px;
+		margin-top: 0px;
 		background-color: transparent;
 		margin-left: 5px;
 
@@ -530,7 +520,6 @@ input[type="range"] {
 
 	input[type=number] {
 		font-size: 1.2rem;
-		line-height: 1.2rem;
 		color: $color;
 		font-family: 'DinCondMedium';
 		font-weight: 600;
@@ -538,18 +527,17 @@ input[type="range"] {
 
 	&-grad{
 		font-size: 1.2rem;
-		line-height: 1.0rem;
 		font-family: 'DinCondMedium';
 		text-align: left;
 		float: left;
 		color: $color;
-		margin-top: 11.5px;
+		margin-top: 6px;
 		font-weight: 600;
 	}
 
 	&-explanation_first { 
 		@extend %explanations;
-		padding-top: 0px;
+		margin-top: -6px;
 	}
 
 	&-explanation_second { 
@@ -575,7 +563,6 @@ input[type="range"] {
 		width: 150px;
 		background: rgb(241, 241, 241);
 		font-size: 1.0rem;
-		line-height: 1.0rem;
 		font-family: 'DinCondMedium';
 		font-weight: 600;
 		border: solid 1.5px black;
@@ -609,17 +596,16 @@ input[type="range"] {
 	&-title {
 		margin-top: 1px;
 		@extend %small_title;
-		padding-top: 18px;
+		padding-top: 11px;
 		padding-left: 43.5px;
 		height: 40px;
 		float: left;
 		font-size: 1.5rem;
-		line-height: 1.2rem;
 	}
 
 	&-number{
 		float: left;
-		margin-top: 12.5px;
+		margin-top: 10.5px;
 		background-color: transparent;
 		margin-left: 4.5px;
 
@@ -635,7 +621,6 @@ input[type="range"] {
 
 	input[type=number] {
 		font-size: 1.2rem;
-		line-height: 1.2rem;
 		color: $color;
 		font-family: 'DinCondMedium';
 		font-weight: 600;
@@ -643,12 +628,11 @@ input[type="range"] {
 
 	&-grad{
 		font-size: 1.2rem;
-		line-height: 1.0rem;
 		font-family: 'DinCondMedium';
 		text-align: left;
 		float: left;
 		color: $color;
-		margin-top: 22px;
+		margin-top: 16px;
 		font-weight: 600;
 		margin-left: -16.5px;
 	}
@@ -675,8 +659,8 @@ input[type="range"] {
 
 .routing__legendbox {
 	width: 213.5px;
-	height: 86px;
-	margin-top: 194px;
+	height: 80px;
+	margin-top: 192.75px;
 	margin-left: 54.5px;
 	position: absolute;
 	background-color: white;
@@ -686,7 +670,6 @@ input[type="range"] {
 		font-family: 'Yandex Sans';
 		color: rgb(117,117,117);
 		font-size: 0.7rem;
-		line-height: 0.9em;
 	}
 	div {
 		margin-top: 1px;
@@ -721,7 +704,6 @@ input[type="range"] {
 	outline-width: 1.2em;
 	font-family: 'Yandex Sans';
 	font-size: 14.3px;
-	line-height: 14.3px;
 	background-color: white;
 }
 .routing__control-end {
@@ -734,7 +716,6 @@ input[type="range"] {
 	outline-width: 1.2em;
 	font-family: 'Yandex Sans';
 	font-size: 14.3px;
-	line-height: 14.3px;
 	background-color: white;
 }
 
@@ -743,9 +724,9 @@ input[type="range"] {
 	color: rgb(102,102,102);
 	font-size: 1.1rem;
 	font-weight: 1200;
-	line-height: 0.9em;
 	position: absolute;
 	margin-left: 146.5px;
+	margin-top: -3px;
 }
 
 #ok {
@@ -753,7 +734,6 @@ input[type="range"] {
 	color: rgb(102,102,102);
 	font-size: 0.7rem;
 	font-weight: 800;
-	line-height: 0.9em;
 	background-color: white;
 	border: solid rgb(255,219,77);
 	border-width: 0.19em;
@@ -840,7 +820,6 @@ input[type="range"] {
 			font-family: 'DinCondMedium';
 			color: rgb(28,29,31);
 			font-size: 2.2rem;
-			line-height: 1.0em;
 			display: flex;
 		}
 	}
@@ -868,9 +847,9 @@ input[type="range"] {
 
 	.routing__legendbox {
 		width: 213.5px;
-		height: 86px;
+		height: 80px;
 		margin-top: 193px;
-		margin-left: 23px;
+		margin-left: 22.5px;
 		position: absolute;
 		background-color: white;
 		border: solid rgb(213,213,206);
@@ -879,7 +858,6 @@ input[type="range"] {
 			font-family: 'Yandex Sans';
 			color: rgb(117,117,117);
 			font-size: 0.7rem;
-			line-height: 0.9em;
 		}
 		div {
 			margin-top: 1px;
@@ -904,6 +882,25 @@ input[type="range"] {
 		input+input {
 			margin-left: 20px;
 		}
+	}
+
+	#ok {
+		font-family: 'Yandex Sans';
+		color: rgb(102,102,102);
+		font-size: 0.7rem;
+		font-weight: 800;
+		background-color: white;
+		border: solid rgb(255,219,77);
+		border-width: 0.19em;
+		background-color: rgb(255,219,77);
+		outline-color: rgb(255,219,77);
+		width: 33.5px;
+		height: 39px;
+		text-align: center;
+		cursor: pointer;
+		float: left;
+		margin-left: 4px;
+		margin-top: -5.5px;
 	}
 
 	.accumulator{
@@ -933,17 +930,16 @@ input[type="range"] {
 		&-title {
 			margin-top: 1px;
 			@extend %small_title;
-			padding-top: 16px;
+			padding-top: 13px;
 			padding-left: 10px;
 			height: 40px;
 			float: left;
 			font-size: 1.3rem;
-			line-height: 1.2rem;
 		}
 	
 		&-number{
 			float: left;
-			margin-top: 19.5px;
+			margin-top: 20px;
 			margin-left: 3px;
 		}
 	
@@ -951,7 +947,6 @@ input[type="range"] {
 			background-color: rgb(241,241,241);
 			border: 1px solid rgb(0, 0, 0);
 			font-size: 0.9rem;
-			line-height: 0.9rem;
 			font-family: 'DinCondMedium';
 			font-weight: 600;
 			height: 20px;
@@ -959,11 +954,10 @@ input[type="range"] {
 	
 		&-grad{
 			font-size: 1.0rem;
-			line-height: 1.0rem;
 			font-family: 'DinCondMedium';
 			text-align: left;
 			float: left;
-			margin-top: 20px;
+			margin-top: 19px;
 			font-weight: 600;
 		}
 	}
@@ -1000,12 +994,11 @@ input[type="range"] {
 			height: 40px;
 			float: left;
 			font-size: 1.4rem;
-			line-height: 1.2rem;
 		}
 	
 		&-number{
 			float: left;
-			margin-top: 2.5px;
+			margin-top: 7px;
 			background-color: transparent;
 			margin-left: 5px;
 	
@@ -1021,7 +1014,6 @@ input[type="range"] {
 	
 		input[type=number] {
 			font-size: 1.1rem;
-			line-height: 1.1rem;
 			color: $color;
 			font-family: 'DinCondMedium';
 			font-weight: 600;
@@ -1029,19 +1021,17 @@ input[type="range"] {
 	
 		&-grad{
 			font-size: 1.2rem;
-			line-height: 1.0rem;
 			font-family: 'DinCondMedium';
 			text-align: left;
 			float: left;
 			color: $color;
-			margin-top: 11px;
+			margin-top: 12px;
 			font-weight: 600;
 		}
 	
 		&-explanation_first { 
 			@extend %explanations;
 			font-size: 0.85rem;
-			line-height: 0.9rem;
 			padding-top: 0px;
 	
 		}
@@ -1049,33 +1039,29 @@ input[type="range"] {
 		&-explanation_second { 
 			@extend %explanations;
 			font-size: 0.85rem;
-			line-height: 0.9rem;
 		}
 	
 		&-explanation_third { 
 			@extend %explanations;
 			font-size: 0.85rem;
-			line-height: 0.9rem;
 		}
 	
 		&-explanation_fourth { 
 			@extend %explanations;
 			font-size: 0.85rem;
-			line-height: 0.9rem;
 		}
 
 	.city{
 		display:flex;
 		justify-content: center;
 		align-items: center;
-		margin-top: 4px;
+		margin-top: 2.5px;
 
 		&-select {
 			width: 120px;
 			height: 21px;
 			background: rgb(241, 241, 241);
 			font-size: 0.9rem;
-			line-height: 0.9rem;
 			font-family: 'DinCondMedium';
 			font-weight: 600;
 			border: solid 1.5px black;
@@ -1116,12 +1102,11 @@ input[type="range"] {
 			height: 40px;
 			float: left;
 			font-size: 1.2rem;
-			line-height: 1.1rem;
 		}
 	
 		&-number{
 			float: left;
-			margin-top: 58.5px;
+			margin-top: 61.5px;
 			background-color: transparent;
 	
 			&::-webkit-inner-spin-button {
@@ -1136,7 +1121,6 @@ input[type="range"] {
 	
 		input[type=number] {
 			font-size: 1.1rem;
-			line-height: 1.1rem;
 			color: $color;
 			font-family: 'DinCondMedium';
 			font-weight: 600;
@@ -1144,12 +1128,11 @@ input[type="range"] {
 	
 		&-grad{
 			font-size: 1.1rem;
-			line-height: 1.1rem;
 			font-family: 'DinCondMedium';
 			text-align: left;
 			float: left;
 			color: $color;
-			margin-top: 67.5px;
+			margin-top: 68px;
 			font-weight: 600;
 			padding-left: -4px;
 		}
