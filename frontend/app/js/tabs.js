@@ -36,7 +36,7 @@ $("#secondOpen").click(function(){
 });
 
 $(function(){
-    var requiredCheckboxes = $('.type_electricity');
+    let requiredCheckboxes = $('.type_electricity');
     requiredCheckboxes.change(function(){
         if(requiredCheckboxes.is(':checked')) {
         } else {

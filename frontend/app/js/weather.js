@@ -7,7 +7,7 @@ $(document).ready(function() {
         alert("Пожалуйста, разрешите доступ к использованию Вашей геопозиции!");
      });
 
-var dict = {
+let dict = {
     "Калининград": 22,
     "Мурманск": 23,
     "Петрозаводск": 18,
@@ -147,7 +147,7 @@ var dict = {
     "Комсомольск-на-Амуре": 11453
 };
 
-var target = dict[$('.city-select').val()]
+let target = dict[$('.city-select').val()]
 
 function requ() {
 	$.ajax({

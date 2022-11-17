@@ -14,6 +14,7 @@ function init() {
                 title: ' '
             }
         }),
+
         zoomControl = new ymaps.control.ZoomControl({
             options: {
                 size: 'small',
@@ -55,8 +56,4 @@ function init() {
         });
 
     });
-    // Функция, вычисляющая стоимость доставки.
-    function calculate(routeLength) {
-        return routeLength;
-    }
 }

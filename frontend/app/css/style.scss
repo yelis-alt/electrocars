@@ -1,41 +1,71 @@
 $color: #005999;
 
-%parameter_border {border: 5px solid $color;
+%parameter_border {
+	border: 5px solid $color;
 	border-radius: 3%;
 }
 
-%big_title {font-size: 1.8rem;
-	font-family: 'DinCondMedium';
+%big_title {
+	font-size: 1.8rem;
+	font-family: 'DinCondMedium', 'sans-serif';
 }	
 			
-%small_title {font-size: 1.6rem;
-	font-family: 'DinCondMedium';
+%small_title {
+	font-size: 1.6rem;
+	font-family: 'DinCondMedium', 'sans-serif';
 	text-align: left;
 }
 
-%explanations {font-size: 1.1rem;
-font-family: 'DinCondMedium';
-font-weight: 200;
-color: rgb(117,117,117);
-white-space: nowrap;
-margin-left: 5px;
-display: inline-block;
-width: 95%;
+%explanations {
+	font-size: 1.1rem;
+	font-family: 'DinCondMedium', 'sans-serif';
+	font-weight: 200;
+	color: rgb(117,117,117);
+	white-space: nowrap;
+	margin-left: 5px;
+	display: inline-block;
+	width: 95%;
 }
 
+%acc{
+	margin-top: 16px;
+	margin-left: 50px;
+	float: left;
+	width: 641.5px;
+	height: 110px;
+	@extend %parameter_border;
+	border-radius: 5%;
+}
+
+%ok{
+	font-family: 'Yandex Sans', 'sans-serif';
+	color: rgb(102,102,102);
+	font-size: 0.7rem;
+	font-weight: 800;
+	border: solid 0.19em rgb(255,219,77);
+	background-color: rgb(255,219,77);
+	outline-color: rgb(255,219,77);
+	width: 33.5px;
+	height: 39px;
+	text-align: center;
+	cursor: pointer;
+	float: left;
+	margin-left: 4px;
+	margin-top: -5px;
+}
 @font-face {
 	font-family: 'DinCondMedium';
-	src: url("..//fonts//DinCondMedium.ttf") format('truetype');
+	src: url("../fonts/DinCondMedium.ttf") format('truetype');
 	font-display: swap;
 }
 @font-face {
 	font-family: 'Yandex Sans';
-	src: url("..//fonts//YandexSansText_Regular.ttf") format('truetype');
+	src: url("../fonts/YandexSansText_Regular.ttf") format('truetype');
 	font-display: swap;
 }
 @font-face {
 	font-family: 'DinCondLight';
-	src: url("..//fonts//DinCondLight.ttf") format('truetype');
+	src: url("../fonts/DinCondLight.ttf") format('truetype');
 	font-display: swap;
 }
 
@@ -54,12 +84,11 @@ width: 95%;
 		background-color: white;
 		cursor: pointer;
 		font-size: 1.2rem;
-		white-space: wrap;
 		display: inline-block;
 		vertical-align: top;
 		float: none;
 		height: 45px;
-		font-family: 'DinCondLight';
+		font-family: 'DinCondLight', 'sans-serif';
 		padding-bottom: 25px;
 		border: none;
 		outline: none;
@@ -83,31 +112,33 @@ width: 95%;
 	}
 }
 
-.headcontainer {
+.head_container {
 	background-color: $color;
-	.header {
-		height: 152px;
-		text-align: center;
-		top: 0;
-		.header-logo {
-			img {
-				text-align: center;
-				float: left;
-				margin-top: 54px;
-				margin-left: 54px;
-				width: 146px;
-				height: 42px;
-			}
+}
+
+.header {
+	height: 152px;
+	text-align: center;
+	top: 0;
+	&-logo {
+		img {
+			text-align: center;
+			float: left;
+			margin-top: 54px;
+			margin-left: 54px;
+			width: 146px;
+			height: 42px;
 		}
+	}
 }
-}
+
 
 .textbox {
 	margin-top: 64.25px;
 	white-space: nowrap;
 	margin-left: 42px;
 	&-title {
-		font-family: 'DinCondMedium';
+		font-family: 'DinCondMedium', 'sans-serif';
 		color: rgb(28,29,31);
 		font-size: 2.4rem;
 		display: flex;
@@ -173,7 +204,7 @@ width: 95%;
 	text-align: center;
 	height: 57.5px;
 	opacity: 0.5;
-	background: url("..//images//t2.png") 50% 50%;
+	background: url("../images/t2.png") 50% 50%;
 	cursor: pointer;
 }
 .charger__type__chooser-radio2 {
@@ -182,7 +213,7 @@ width: 95%;
 	text-align: center;
 	height: 57.5px;
 	opacity: 0.5;
-	background: url("..//images//chademo.png");
+	background: url("../images/chademo.png");
 	cursor: pointer;
 }
 .charger__type__chooser-radio3 {
@@ -191,7 +222,7 @@ width: 95%;
 	text-align: center;
 	height: 57.5px;
 	opacity: 0.5;
-	background: url("..//images//ccscombo2.png");
+	background: url("../images/ccscombo2.png");
 	cursor: pointer;
 }
 .charger__type__chooser-radio4{
@@ -200,7 +231,7 @@ width: 95%;
 	text-align: center;
 	height: 57.5px;
 	opacity: 0.5;
-	background: url("..//images//saej1772.png");
+	background: url("../images/saej1772.png");
 	cursor: pointer;
 }
 
@@ -210,7 +241,7 @@ width: 95%;
 	text-align: center;
 	height: 57.5px;
 	opacity: 0.5;
-	background: url("..//images//ccscombo1.png");
+	background: url("../images/ccscombo1.png");
 	cursor: pointer;
 }
 
@@ -220,7 +251,7 @@ width: 95%;
 	text-align: center;
 	height: 57.5px;
 	opacity: 0.5;
-	background: url("..//images//tesla.png");
+	background: url("../images/tesla.png");
 	cursor: pointer;
 }
 
@@ -230,7 +261,7 @@ width: 95%;
 	text-align: center;
 	height: 57.5px;
 	opacity: 0.5;
-	background: url("..//images//gbtac.png");
+	background: url("../images/gbtac.png");
 	cursor: pointer;
 }
 
@@ -240,7 +271,7 @@ width: 95%;
 	text-align: center;
 	height: 57.5px;
 	opacity: 0.5;
-	background: url("..//images//gbtdc.png");
+	background: url("../images/gbtdc.png");
 	cursor: pointer;
 }
 
@@ -257,7 +288,7 @@ width: 95%;
     }
 	label {
         font-size: 1.4rem;;
-		font-family: 'DinCondLight';
+		font-family: 'DinCondLight', 'sans-serif';
 		vertical-align: center;
 	}
 	&-title{
@@ -341,7 +372,7 @@ input[type="number"] {
 	width: 40px;
 	height: 35px;
 	font-size: 1.0rem;
-	font-family: 'DinCondLight';
+	font-family: 'DinCondLight', 'sans-serif';
 	border: none;
 }
 input[type=number] {
@@ -404,21 +435,8 @@ input[type="range"] {
 	z-index: 1;
 }
 
-.nuipogoda-iframe-informer{
-	width:50px;
-	height:251px;
-	display:block;
-}
-
 .accumulator{
-	margin-top: 16px;
-	margin-left: 50px;
-	float: left;
-	width: 641.5px;
-	height: 110px;
-	@extend %parameter_border;
-	border-radius: 5%;
-
+	@extend %acc;
 	&-title {
 		margin-top: 6.5px;
 		@extend %big_title;
@@ -432,8 +450,7 @@ input[type="range"] {
 .accumulator__temp{
 	flex-direction: row; 
 	justify-content: flex-start; 
-	flex-wrap: wrap; 
-
+	flex-wrap: wrap;
 	&-title {
 		margin-top: -6px;
 		@extend %small_title;
@@ -446,24 +463,22 @@ input[type="range"] {
 
 	&-number{
 		float: left;
-		margin-top: 10px;
+		margin-top: 11px;
 		margin-left: 3px;
 	}
-
 	input[type=number] {
 		font-size: 1.2rem;
-		font-family: 'DinCondMedium';
+		font-family: 'DinCondMedium', 'sans-serif';
 		font-weight: 600;
 		background-color: rgb(241,241,241);
 		border: 1px solid rgb(0, 0, 0);
 	}
-
 	&-grad{
 		font-size: 1.2rem;
-		font-family: 'DinCondMedium';
+		font-family: 'DinCondMedium', 'sans-serif';
 		text-align: left;
 		float: left;
-		margin-top: 16px;
+		margin-top: 17px;
 		font-weight: 600;
 		margin-left: 3px;
 	}
@@ -477,7 +492,6 @@ input[type="range"] {
 	height: 200px;
 	@extend %parameter_border;
 	border-radius: 5%;
-
 	&-title {
 		margin-top: 5px;
 		@extend %big_title;
@@ -491,8 +505,7 @@ input[type="range"] {
 .weather__temp{
 	flex-direction: row; 
 	justify-content: flex-start; 
-	flex-wrap: wrap; 
-
+	flex-wrap: wrap;
 	&-title {
 		margin-top: -8px;
 		@extend %small_title;
@@ -501,18 +514,15 @@ input[type="range"] {
 		height: 35px;
 		float: left;
 	}
-
 	&-number{
 		float: left;
-		margin-top: 0px;
+		margin-top: 0;
 		background-color: transparent;
 		margin-left: 5px;
-
 		&::-webkit-inner-spin-button {
 			-webkit-appearance: none;
 			margin: 0;
 		  }
-		
 		&:focus{
 			outline: none;
 		}
@@ -521,13 +531,13 @@ input[type="range"] {
 	input[type=number] {
 		font-size: 1.2rem;
 		color: $color;
-		font-family: 'DinCondMedium';
+		font-family: 'DinCondMedium', 'sans-serif';
 		font-weight: 600;
 	}
 
 	&-grad{
 		font-size: 1.2rem;
-		font-family: 'DinCondMedium';
+		font-family: 'DinCondMedium', 'sans-serif';
 		text-align: left;
 		float: left;
 		color: $color;
@@ -558,26 +568,18 @@ input[type="range"] {
 	justify-content: center;
 	align-items: center;
 	margin-top: 1.5px;
-
 	&-select {
 		width: 150px;
 		background: rgb(241, 241, 241);
 		font-size: 1.0rem;
-		font-family: 'DinCondMedium';
+		font-family: 'DinCondMedium', 'sans-serif';
 		font-weight: 600;
 		border: solid 1.5px black;
 	}
 }
 
 .spending{
-	margin-top: 16px;
-	margin-left: 50px;
-	float: left;
-	width: 641.5px;
-	height: 110px;
-	@extend %parameter_border;
-	border-radius: 5%;
-
+	@extend %acc;
 	&-title {
 		margin-top: 6.5px;
 		@extend %big_title;
@@ -591,8 +593,7 @@ input[type="range"] {
 .spending__temp{
 	flex-direction: row; 
 	justify-content: flex-start; 
-	flex-wrap: wrap; 
-
+	flex-wrap: wrap;
 	&-title {
 		margin-top: 1px;
 		@extend %small_title;
@@ -602,18 +603,15 @@ input[type="range"] {
 		float: left;
 		font-size: 1.5rem;
 	}
-
 	&-number{
 		float: left;
 		margin-top: 10.5px;
 		background-color: transparent;
 		margin-left: 4.5px;
-
 		&::-webkit-inner-spin-button {
 			-webkit-appearance: none;
 			margin: 0;
 		  }
-		
 		&:focus{
 			outline: none;
 		}
@@ -622,17 +620,16 @@ input[type="range"] {
 	input[type=number] {
 		font-size: 1.2rem;
 		color: $color;
-		font-family: 'DinCondMedium';
+		font-family: 'DinCondMedium', 'sans-serif';
 		font-weight: 600;
 	}
-
 	&-grad{
 		font-size: 1.2rem;
-		font-family: 'DinCondMedium';
+		font-family: 'DinCondMedium', 'sans-serif';
 		text-align: left;
 		float: left;
 		color: $color;
-		margin-top: 16px;
+		margin-top: 16.5px;
 		font-weight: 600;
 		margin-left: -16.5px;
 	}
@@ -644,15 +641,11 @@ input[type="range"] {
 }
 
 #map {
-	width: 100%;
-	height: 100%;
 	padding: 0;
-	margin: 0;
+	margin: 17.5px 0  0 42px;
 	width: 1452px;
 	height: 450px;
-	margin-top: 17.5px;
 	display: flex;
-	margin-left: 42px;
 	border: solid $color;
 	position: absolute;
 }
@@ -660,14 +653,13 @@ input[type="range"] {
 .routing__legendbox {
 	width: 213.5px;
 	height: 80px;
-	margin-top: 192.75px;
+	margin-top: 193.5px;
 	margin-left: 54.5px;
 	position: absolute;
 	background-color: white;
-	border: solid rgb(213,213,206);
-	border-width: 0.08em;
+	border: solid 0.08em rgb(213,213,206);
 	span {
-		font-family: 'Yandex Sans';
+		font-family: 'Yandex Sans', 'sans-serif';
 		color: rgb(117,117,117);
 		font-size: 0.7rem;
 	}
@@ -698,11 +690,10 @@ input[type="range"] {
 	height: 28px;
 	float: left;
 	width: 140px;
-	border: solid rgb(204,204,204);
-	border-width: 0.09em;
+	border: solid 0.09em rgb(204,204,204);
 	outline-color: rgb(255,219,77);
 	outline-width: 1.2em;
-	font-family: 'Yandex Sans';
+	font-family: 'Yandex Sans', 'sans-serif';
 	font-size: 14.3px;
 	background-color: white;
 }
@@ -710,17 +701,16 @@ input[type="range"] {
 	height: 28px;
 	width: 140px;
 	float: left;
-	border: solid rgb(204,204,204);
-	border-width: 0.09em;
+	border: solid 0.09em rgb(204,204,204);
 	outline-color: rgb(255,219,77);
 	outline-width: 1.2em;
-	font-family: 'Yandex Sans';
+	font-family: 'Yandex Sans', 'sans-serif';
 	font-size: 14.3px;
 	background-color: white;
 }
 
 .routing__control-tire {
-	font-family: 'Yandex Sans';
+	font-family: 'Yandex Sans', 'sans-serif';
 	color: rgb(102,102,102);
 	font-size: 1.1rem;
 	font-weight: 1200;
@@ -730,26 +720,11 @@ input[type="range"] {
 }
 
 #ok {
-	font-family: 'Yandex Sans';
-	color: rgb(102,102,102);
-	font-size: 0.7rem;
-	font-weight: 800;
-	background-color: white;
-	border: solid rgb(255,219,77);
-	border-width: 0.19em;
-	background-color: rgb(255,219,77);
-	outline-color: rgb(255,219,77);
-	width: 33.5px;
-	height: 39px;
-	text-align: center;
-	cursor: pointer;
-	float: left;
-	margin-left: 4px;
-	margin-top: -5px;
+	@extend %ok;
 }
 
 @media (max-width: 1024px) {
-	.headcontainer {
+	.head_container {
 		background-color: $color;
 		.header {
 			height: 60.8px;
@@ -774,7 +749,7 @@ input[type="range"] {
         margin-left: 12px;
         display: inline-block;
         white-space: nowrap;
-        height: 30.5px;
+        height: 30px;
         border-bottom: 0.1px solid rgb(224, 224, 224);
 		button+button {
 			margin-left: 46px;
@@ -783,21 +758,20 @@ input[type="range"] {
 			background-color: white;
 			cursor: pointer;
 			font-size: 1.3rem;
-			white-space: wrap;
 			display: inline-block;
 			vertical-align: top;
 			float: none;
 			height: 3px;
-			font-family: 'DinCondLight';
+			font-family: 'DinCondLight', 'sans-serif';
 			padding-bottom: 25px;
 			border: none;
 			outline: none;
 		&::after {
 			content: '';
             display: block;
-            margin-top: 0px;
+            margin-top: 2px;
             width: 0;
-            height: 3.5px;
+            height: 2.5px;
             background: rgb(0, 89, 153);
             transition: width .2s;
 		}
@@ -816,8 +790,8 @@ input[type="range"] {
         margin-top: 35px;
         white-space: nowrap;
         margin-left: 10px;
-		.textbox-title {
-			font-family: 'DinCondMedium';
+		&-title {
+			font-family: 'DinCondMedium', 'sans-serif';
 			color: rgb(28,29,31);
 			font-size: 2.2rem;
 			display: flex;
@@ -836,41 +810,11 @@ input[type="range"] {
 
 	#map {
 		padding: 0;
-		margin: 0;
+		margin: 17.5px 0 0 10px;
 		width: 746px;
 		height: 560px;
-		margin-top: 17.5px;
-		margin-left: 10px;
 		border: solid $color;
 		display: inline-block;
-	}
-
-	.routing__legendbox {
-		width: 213.5px;
-		height: 80px;
-		margin-top: 193px;
-		margin-left: 22.5px;
-		position: absolute;
-		background-color: white;
-		border: solid rgb(213,213,206);
-		border-width: 0.08em;
-		span {
-			font-family: 'Yandex Sans';
-			color: rgb(117,117,117);
-			font-size: 0.7rem;
-		}
-		div {
-			margin-top: 1px;
-			display: inline;
-			position: absolute;
-			margin-left: 3px;
-		}
-		img {
-			margin-top: 3px;
-			margin-left: 25px;
-			width: 15px;
-			height: 15px;
-		}
 	}
 	
 	.routing__control {
@@ -885,22 +829,8 @@ input[type="range"] {
 	}
 
 	#ok {
-		font-family: 'Yandex Sans';
-		color: rgb(102,102,102);
-		font-size: 0.7rem;
-		font-weight: 800;
-		background-color: white;
-		border: solid rgb(255,219,77);
-		border-width: 0.19em;
-		background-color: rgb(255,219,77);
-		outline-color: rgb(255,219,77);
-		width: 33.5px;
-		height: 39px;
-		text-align: center;
-		cursor: pointer;
-		float: left;
-		margin-left: 4px;
-		margin-top: -5.5px;
+	@extend %ok;
+	margin-top: -5.5px;
 	}
 
 	.accumulator{
@@ -911,7 +841,6 @@ input[type="range"] {
 		height: 110px;
 		@extend %parameter_border;
 		border-radius: 5%;
-	
 		&-title {
 			margin-top: 6.5px;
 			@extend %big_title;
@@ -925,8 +854,7 @@ input[type="range"] {
 	.accumulator__temp{
 		flex-direction: row; 
 		justify-content: flex-start; 
-		flex-wrap: wrap; 
-	
+		flex-wrap: wrap;
 		&-title {
 			margin-top: 1px;
 			@extend %small_title;
@@ -936,7 +864,6 @@ input[type="range"] {
 			float: left;
 			font-size: 1.3rem;
 		}
-	
 		&-number{
 			float: left;
 			margin-top: 20px;
@@ -947,14 +874,14 @@ input[type="range"] {
 			background-color: rgb(241,241,241);
 			border: 1px solid rgb(0, 0, 0);
 			font-size: 0.9rem;
-			font-family: 'DinCondMedium';
+			font-family: 'DinCondMedium', 'sans-serif';
 			font-weight: 600;
 			height: 20px;
 		}
 	
 		&-grad{
 			font-size: 1.0rem;
-			font-family: 'DinCondMedium';
+			font-family: 'DinCondMedium', 'sans-serif';
 			text-align: left;
 			float: left;
 			margin-top: 19px;
@@ -984,8 +911,7 @@ input[type="range"] {
 	.weather__temp{
 		flex-direction: row; 
 		justify-content: flex-start; 
-		flex-wrap: wrap; 
-	
+		flex-wrap: wrap;
 		&-title {
 			margin-top: 1px;
 			@extend %small_title;
@@ -995,18 +921,15 @@ input[type="range"] {
 			float: left;
 			font-size: 1.4rem;
 		}
-	
 		&-number{
 			float: left;
 			margin-top: 7px;
 			background-color: transparent;
 			margin-left: 5px;
-	
 			&::-webkit-inner-spin-button {
 				-webkit-appearance: none;
 				margin: 0;
 			  }
-			
 			&:focus{
 				outline: none;
 			}
@@ -1015,27 +938,24 @@ input[type="range"] {
 		input[type=number] {
 			font-size: 1.1rem;
 			color: $color;
-			font-family: 'DinCondMedium';
+			font-family: 'DinCondMedium', 'sans-serif';
 			font-weight: 600;
 			}
-	
 		&-grad{
 			font-size: 1.2rem;
-			font-family: 'DinCondMedium';
+			font-family: 'DinCondMedium', 'sans-serif';
 			text-align: left;
 			float: left;
 			color: $color;
 			margin-top: 12px;
 			font-weight: 600;
 		}
-	
 		&-explanation_first { 
 			@extend %explanations;
 			font-size: 0.85rem;
-			padding-top: 0px;
+			padding-top: 0;
 	
 		}
-	
 		&-explanation_second { 
 			@extend %explanations;
 			font-size: 0.85rem;
@@ -1045,7 +965,6 @@ input[type="range"] {
 			@extend %explanations;
 			font-size: 0.85rem;
 		}
-	
 		&-explanation_fourth { 
 			@extend %explanations;
 			font-size: 0.85rem;
@@ -1056,13 +975,12 @@ input[type="range"] {
 		justify-content: center;
 		align-items: center;
 		margin-top: 2.5px;
-
 		&-select {
 			width: 120px;
 			height: 21px;
 			background: rgb(241, 241, 241);
 			font-size: 0.9rem;
-			font-family: 'DinCondMedium';
+			font-family: 'DinCondMedium', 'sans-serif';
 			font-weight: 600;
 			border: solid 1.5px black;
 			vertical-align: center;
@@ -1078,7 +996,6 @@ input[type="range"] {
 		height: 203px;
 		@extend %parameter_border;
 		border-radius: 5%;
-	
 		&-title {
 			margin-top: 5px;
 			@extend %big_title;
@@ -1092,8 +1009,7 @@ input[type="range"] {
 	.spending__temp{
 		flex-direction: row; 
 		justify-content: flex-start; 
-		flex-wrap: wrap; 
-	
+		flex-wrap: wrap;
 		&-title {
 			margin-top: 1px;
 			@extend %small_title;
@@ -1103,7 +1019,6 @@ input[type="range"] {
 			float: left;
 			font-size: 1.2rem;
 		}
-	
 		&-number{
 			float: left;
 			margin-top: 61.5px;
@@ -1118,21 +1033,19 @@ input[type="range"] {
 				outline: none;
 			}
 		}
-	
 		input[type=number] {
 			font-size: 1.1rem;
 			color: $color;
-			font-family: 'DinCondMedium';
+			font-family: 'DinCondMedium', 'sans-serif';
 			font-weight: 600;
 		}
-	
 		&-grad{
 			font-size: 1.1rem;
-			font-family: 'DinCondMedium';
+			font-family: 'DinCondMedium', 'sans-serif';
 			text-align: left;
 			float: left;
 			color: $color;
-			margin-top: 68px;
+			margin-top: 68.5px;
 			font-weight: 600;
 			padding-left: -4px;
 		}
