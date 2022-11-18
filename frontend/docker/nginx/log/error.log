@@ -331,3 +331,13 @@
 2022/11/17 09:06:54 [error] 22#22: *229 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.18.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html?date_trip=2022-11-17T13%3A51&date_trip=2022-11-17T23%3A51"
 2022/11/17 09:09:27 [error] 23#23: *234 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.18.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html?date_trip=2022-11-17T13%3A51&date_trip=2022-11-17T23%3A51"
 2022/11/17 09:09:45 [error] 22#22: *237 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.18.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html?date_trip=2022-11-17T13%3A51&date_trip=2022-11-17T23%3A51"
+2022/11/17 14:07:35 [error] 22#22: *246 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.18.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost"
+2022/11/18 10:40:46 [notice] 1#1: using the "epoll" event method
+2022/11/18 10:40:46 [notice] 1#1: nginx/1.23.2
+2022/11/18 10:40:46 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/11/18 10:40:46 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2022/11/18 10:40:46 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/11/18 10:40:46 [notice] 1#1: start worker processes
+2022/11/18 10:40:46 [notice] 1#1: start worker process 21
+2022/11/18 10:40:46 [notice] 1#1: start worker process 22
+2022/11/18 10:40:49 [error] 21#21: *1 rewrite or internal redirection cycle while internally redirecting to "////////////", client: 172.18.0.1, server: , request: "GET / HTTP/1.1", host: "localhost"
