@@ -57,3 +57,61 @@ function init() {
 
     });
 }
+
+ymaps.ready(function () {
+        MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+            '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+        ),
+
+        myPlacemarkWithContent1 = new ymaps.Placemark([55.661574, 37.573856], {
+            balloonContent: 'Здесь характеристики',
+        }, {
+            iconLayout: 'default#imageWithContent',
+            iconImageHref: './images/c1.png',
+            iconImageSize: [24, 24],
+            iconImageOffset: [0, 0],
+            iconContentOffset: [-100, 100],
+            iconContentLayout: MyIconContentLayout
+        });
+
+        myPlacemarkWithContent2 = new ymaps.Placemark([55.661574, 37.573856], {
+            balloonContent: 'Здесь характеристики',
+        }, {
+            iconLayout: 'default#imageWithContent',
+            iconImageHref: './images/c1.png',
+            iconImageSize: [24, 24],
+            iconImageOffset: [0, 0],
+            iconContentOffset: [15, 15],
+            iconContentLayout: MyIconContentLayout
+        });
+
+        myPlacemarkWithContent3 = new ymaps.Placemark([55.681494, 37.573876], {
+            balloonContent: 'Здесь характеристики',
+        }, {
+            iconLayout: 'default#imageWithContent',
+            iconImageHref: './images/c1.png',
+            iconImageSize: [24, 24],
+            iconImageOffset: [0, 0],
+            iconContentOffset: [15, 15],
+            iconContentLayout: MyIconContentLayout
+        });
+
+        myPlacemarkWithContent4 = new ymaps.Placemark([55.681494, 37.573876], {
+            balloonContent: 'Здесь характеристики',
+        }, {
+            iconLayout: 'default#imageWithContent',
+            iconImageHref: './images/c1.png',
+            iconImageSize: [24, 24],
+            iconImageOffset: [0, 0],
+            iconContentOffset: [15, 15],
+            iconContentLayout: MyIconContentLayout
+        });
+
+    myMap.geoObjects
+        .add(myPlacemarkWithContent1);
+    myMap.geoObjects
+        .add(myPlacemarkWithContent2)
+        .add(myPlacemarkWithContent3)
+        .add(myPlacemarkWithContent4);
+
+});
