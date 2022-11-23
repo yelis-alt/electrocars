@@ -21,11 +21,8 @@ function styles() {
 function scripts() {
     return src([
         'node_modules/jquery/dist/jquery.js',
-        'app/js/dates.js',
-        'app/js/map.js',
-        'app/js/ranger.js',
-        'app/js/tabs.js',
-        'app/js/weather.js'
+        'app/js/*.js',
+        '!app/js/main.min.js'
     ])
     .pipe(concat('main.min.js'))
     .pipe(uglify())
@@ -49,7 +46,8 @@ function images() {
 function build() {
    return src(['app/**/*.html',
            'app/css/style.min.css',
-           'app/js/main.min.js'], {base:'app'})
+           'app/js/main.min.js',
+           'app/php/*.php'], {base:'app'})
     .pipe(dest('dist'))
 }
 

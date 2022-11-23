@@ -1,3 +1,4 @@
+
 ymaps.ready(init);
 
 function init() {

@@ -366,3 +366,606 @@
 2022/11/21 11:48:29 [error] 22#22: *68 rewrite or internal redirection cycle while internally redirecting to "/images/с.png///////////", client: 172.18.0.1, server: , request: "GET /images/%D1%81.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
 2022/11/21 11:48:50 [error] 22#22: *79 rewrite or internal redirection cycle while internally redirecting to "/images/с.png///////////", client: 172.18.0.1, server: , request: "GET /images/%D1%81.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
 2022/11/21 11:49:08 [error] 22#22: *84 rewrite or internal redirection cycle while internally redirecting to "/images/с.png///////////", client: 172.18.0.1, server: , request: "GET /images/%D1%81.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 06:35:11 [notice] 1#1: using the "epoll" event method
+2022/11/22 06:35:11 [notice] 1#1: nginx/1.23.2
+2022/11/22 06:35:11 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/11/22 06:35:11 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2022/11/22 06:35:11 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/11/22 06:35:11 [notice] 1#1: start worker processes
+2022/11/22 06:35:11 [notice] 1#1: start worker process 21
+2022/11/22 06:35:11 [notice] 1#1: start worker process 22
+2022/11/22 08:03:11 [error] 22#22: *1 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.18.0.1, server: , request: "GET /php.connect.php HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "localhost"
+2022/11/22 08:03:11 [error] 22#22: *1 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.18.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php.connect.php"
+2022/11/22 08:03:20 [error] 21#21: *2 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.18.0.1, server: , request: "GET /php/connect.php HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "localhost"
+2022/11/22 08:03:20 [error] 21#21: *6 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.18.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 08:04:49 [error] 21#21: *7 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.18.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 08:17:20 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/11/22 08:17:20 [notice] 21#21: gracefully shutting down
+2022/11/22 08:17:20 [notice] 22#22: gracefully shutting down
+2022/11/22 08:17:20 [notice] 21#21: exiting
+2022/11/22 08:17:20 [notice] 21#21: exit
+2022/11/22 08:17:20 [notice] 22#22: exiting
+2022/11/22 08:17:20 [notice] 22#22: exit
+2022/11/22 08:17:20 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2022/11/22 08:17:20 [notice] 1#1: worker process 21 exited with code 0
+2022/11/22 08:17:20 [notice] 1#1: signal 29 (SIGIO) received
+2022/11/22 08:17:20 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2022/11/22 08:17:20 [notice] 1#1: worker process 22 exited with code 0
+2022/11/22 08:17:20 [notice] 1#1: exit
+2022/11/22 08:17:35 [notice] 1#1: using the "epoll" event method
+2022/11/22 08:17:35 [notice] 1#1: nginx/1.23.2
+2022/11/22 08:17:35 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/11/22 08:17:35 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2022/11/22 08:17:35 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/11/22 08:17:35 [notice] 1#1: start worker processes
+2022/11/22 08:17:35 [notice] 1#1: start worker process 21
+2022/11/22 08:17:35 [notice] 1#1: start worker process 22
+2022/11/22 08:17:53 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/11/22 08:17:53 [notice] 22#22: gracefully shutting down
+2022/11/22 08:17:53 [notice] 21#21: gracefully shutting down
+2022/11/22 08:17:53 [notice] 22#22: exiting
+2022/11/22 08:17:53 [notice] 21#21: exiting
+2022/11/22 08:17:53 [notice] 22#22: exit
+2022/11/22 08:17:53 [notice] 21#21: exit
+2022/11/22 08:17:53 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2022/11/22 08:17:53 [notice] 1#1: worker process 21 exited with code 0
+2022/11/22 08:17:53 [notice] 1#1: worker process 22 exited with code 0
+2022/11/22 08:17:53 [notice] 1#1: exit
+2022/11/22 08:18:32 [notice] 1#1: using the "epoll" event method
+2022/11/22 08:18:32 [notice] 1#1: nginx/1.23.2
+2022/11/22 08:18:32 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/11/22 08:18:32 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2022/11/22 08:18:32 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/11/22 08:18:32 [notice] 1#1: start worker processes
+2022/11/22 08:18:32 [notice] 1#1: start worker process 21
+2022/11/22 08:18:32 [notice] 1#1: start worker process 22
+2022/11/22 08:19:03 [error] 22#22: *6 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.18.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 08:19:19 [error] 21#21: *9 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.18.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost"
+2022/11/22 08:19:20 [error] 21#21: *10 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.18.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 08:22:42 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/11/22 08:22:42 [notice] 22#22: gracefully shutting down
+2022/11/22 08:22:42 [notice] 22#22: exiting
+2022/11/22 08:22:42 [notice] 22#22: exit
+2022/11/22 08:22:42 [notice] 21#21: gracefully shutting down
+2022/11/22 08:22:42 [notice] 21#21: exiting
+2022/11/22 08:22:42 [notice] 21#21: exit
+2022/11/22 08:22:42 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2022/11/22 08:22:42 [notice] 1#1: worker process 21 exited with code 0
+2022/11/22 08:22:42 [notice] 1#1: signal 29 (SIGIO) received
+2022/11/22 08:22:42 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2022/11/22 08:22:42 [notice] 1#1: worker process 22 exited with code 0
+2022/11/22 08:22:42 [notice] 1#1: exit
+2022/11/22 08:23:11 [notice] 1#1: using the "epoll" event method
+2022/11/22 08:23:11 [notice] 1#1: nginx/1.23.2
+2022/11/22 08:23:11 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/11/22 08:23:11 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2022/11/22 08:23:11 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/11/22 08:23:11 [notice] 1#1: start worker processes
+2022/11/22 08:23:11 [notice] 1#1: start worker process 21
+2022/11/22 08:23:11 [notice] 1#1: start worker process 22
+2022/11/22 08:23:47 [error] 21#21: *1 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.18.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 08:33:45 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/11/22 08:33:45 [notice] 21#21: gracefully shutting down
+2022/11/22 08:33:45 [notice] 21#21: exiting
+2022/11/22 08:33:45 [notice] 22#22: gracefully shutting down
+2022/11/22 08:33:45 [notice] 21#21: exit
+2022/11/22 08:33:45 [notice] 22#22: exiting
+2022/11/22 08:33:45 [notice] 22#22: exit
+2022/11/22 08:33:45 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2022/11/22 08:33:45 [notice] 1#1: worker process 21 exited with code 0
+2022/11/22 08:33:45 [notice] 1#1: worker process 22 exited with code 0
+2022/11/22 08:33:45 [notice] 1#1: exit
+2022/11/22 08:33:59 [notice] 1#1: using the "epoll" event method
+2022/11/22 08:33:59 [notice] 1#1: nginx/1.23.2
+2022/11/22 08:33:59 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/11/22 08:33:59 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2022/11/22 08:33:59 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/11/22 08:33:59 [notice] 1#1: start worker processes
+2022/11/22 08:33:59 [notice] 1#1: start worker process 21
+2022/11/22 08:33:59 [notice] 1#1: start worker process 22
+2022/11/22 08:34:29 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/11/22 08:34:29 [notice] 21#21: gracefully shutting down
+2022/11/22 08:34:29 [notice] 21#21: exiting
+2022/11/22 08:34:29 [notice] 22#22: gracefully shutting down
+2022/11/22 08:34:29 [notice] 21#21: exit
+2022/11/22 08:34:29 [notice] 22#22: exiting
+2022/11/22 08:34:29 [notice] 22#22: exit
+2022/11/22 08:34:29 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2022/11/22 08:34:29 [notice] 1#1: worker process 21 exited with code 0
+2022/11/22 08:34:29 [notice] 1#1: signal 29 (SIGIO) received
+2022/11/22 08:34:29 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2022/11/22 08:34:29 [notice] 1#1: worker process 22 exited with code 0
+2022/11/22 08:34:29 [notice] 1#1: exit
+2022/11/22 08:34:45 [notice] 1#1: using the "epoll" event method
+2022/11/22 08:34:45 [notice] 1#1: nginx/1.23.2
+2022/11/22 08:34:45 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/11/22 08:34:45 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2022/11/22 08:34:45 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/11/22 08:34:45 [notice] 1#1: start worker processes
+2022/11/22 08:34:45 [notice] 1#1: start worker process 21
+2022/11/22 08:34:45 [notice] 1#1: start worker process 22
+2022/11/22 08:34:50 [error] 22#22: *2 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.19.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 08:34:50 [error] 21#21: *1 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.19.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 08:41:56 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/11/22 08:41:56 [notice] 22#22: gracefully shutting down
+2022/11/22 08:41:56 [notice] 22#22: exiting
+2022/11/22 08:41:56 [notice] 21#21: gracefully shutting down
+2022/11/22 08:41:56 [notice] 22#22: exit
+2022/11/22 08:41:56 [notice] 21#21: exiting
+2022/11/22 08:41:56 [notice] 21#21: exit
+2022/11/22 08:41:56 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2022/11/22 08:41:56 [notice] 1#1: worker process 21 exited with code 0
+2022/11/22 08:41:56 [notice] 1#1: worker process 22 exited with code 0
+2022/11/22 08:41:56 [notice] 1#1: exit
+2022/11/22 08:45:37 [notice] 1#1: using the "epoll" event method
+2022/11/22 08:45:37 [notice] 1#1: nginx/1.23.2
+2022/11/22 08:45:37 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/11/22 08:45:37 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2022/11/22 08:45:37 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/11/22 08:45:37 [notice] 1#1: start worker processes
+2022/11/22 08:45:37 [notice] 1#1: start worker process 21
+2022/11/22 08:45:37 [notice] 1#1: start worker process 22
+2022/11/22 08:45:44 [error] 22#22: *2 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.19.0.1, server: , request: "GET /php/connect.php HTTP/1.1", upstream: "fastcgi://172.19.0.2:9000", host: "localhost"
+2022/11/22 08:45:44 [error] 22#22: *2 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.19.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 08:45:45 [error] 21#21: *1 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.19.0.1, server: , request: "GET /php/connect.php HTTP/1.1", upstream: "fastcgi://172.19.0.2:9000", host: "localhost"
+2022/11/22 08:45:45 [error] 21#21: *1 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.19.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 08:54:20 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/11/22 08:54:20 [notice] 21#21: gracefully shutting down
+2022/11/22 08:54:20 [notice] 22#22: gracefully shutting down
+2022/11/22 08:54:20 [notice] 21#21: exiting
+2022/11/22 08:54:20 [notice] 21#21: exit
+2022/11/22 08:54:20 [notice] 22#22: exiting
+2022/11/22 08:54:20 [notice] 22#22: exit
+2022/11/22 08:54:20 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2022/11/22 08:54:20 [notice] 1#1: worker process 21 exited with code 0
+2022/11/22 08:54:20 [notice] 1#1: worker process 22 exited with code 0
+2022/11/22 08:54:20 [notice] 1#1: exit
+2022/11/22 08:54:32 [notice] 1#1: using the "epoll" event method
+2022/11/22 08:54:32 [notice] 1#1: nginx/1.23.2
+2022/11/22 08:54:32 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/11/22 08:54:32 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2022/11/22 08:54:32 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/11/22 08:54:32 [notice] 1#1: start worker processes
+2022/11/22 08:54:32 [notice] 1#1: start worker process 21
+2022/11/22 08:54:32 [notice] 1#1: start worker process 22
+2022/11/22 08:55:00 [error] 21#21: *1 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.19.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 08:57:53 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/11/22 08:57:53 [notice] 21#21: gracefully shutting down
+2022/11/22 08:57:53 [notice] 21#21: exiting
+2022/11/22 08:57:53 [notice] 22#22: gracefully shutting down
+2022/11/22 08:57:53 [notice] 21#21: exit
+2022/11/22 08:57:53 [notice] 22#22: exiting
+2022/11/22 08:57:53 [notice] 22#22: exit
+2022/11/22 08:57:53 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2022/11/22 08:57:53 [notice] 1#1: worker process 21 exited with code 0
+2022/11/22 08:57:53 [notice] 1#1: worker process 22 exited with code 0
+2022/11/22 08:57:53 [notice] 1#1: exit
+2022/11/22 08:58:02 [notice] 1#1: using the "epoll" event method
+2022/11/22 08:58:02 [notice] 1#1: nginx/1.23.2
+2022/11/22 08:58:02 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/11/22 08:58:02 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2022/11/22 08:58:02 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/11/22 08:58:02 [notice] 1#1: start worker processes
+2022/11/22 08:58:02 [notice] 1#1: start worker process 21
+2022/11/22 08:58:02 [notice] 1#1: start worker process 22
+2022/11/22 08:59:18 [error] 22#22: *2 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.20.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 08:59:19 [error] 21#21: *1 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.20.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 08:59:20 [error] 21#21: *5 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.20.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 09:02:20 [error] 22#22: *8 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.20.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 09:05:52 [error] 22#22: *12 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.20.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 09:05:52 [error] 22#22: *11 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.20.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 09:05:53 [error] 21#21: *15 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.20.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 09:05:54 [error] 21#21: *17 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.20.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 09:05:54 [error] 21#21: *19 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.20.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 09:05:55 [error] 21#21: *21 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.20.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 09:05:58 [error] 21#21: *24 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.20.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 09:06:21 [error] 21#21: *27 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.20.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 09:12:03 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/11/22 09:12:03 [notice] 21#21: gracefully shutting down
+2022/11/22 09:12:03 [notice] 22#22: gracefully shutting down
+2022/11/22 09:12:03 [notice] 21#21: exiting
+2022/11/22 09:12:03 [notice] 22#22: exiting
+2022/11/22 09:12:03 [notice] 21#21: exit
+2022/11/22 09:12:03 [notice] 22#22: exit
+2022/11/22 09:12:04 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2022/11/22 09:12:04 [notice] 1#1: worker process 21 exited with code 0
+2022/11/22 09:12:04 [notice] 1#1: worker process 22 exited with code 0
+2022/11/22 09:12:04 [notice] 1#1: exit
+2022/11/22 09:12:10 [notice] 1#1: using the "epoll" event method
+2022/11/22 09:12:10 [notice] 1#1: nginx/1.23.2
+2022/11/22 09:12:10 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/11/22 09:12:10 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2022/11/22 09:12:10 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/11/22 09:12:10 [notice] 1#1: start worker processes
+2022/11/22 09:12:10 [notice] 1#1: start worker process 21
+2022/11/22 09:12:10 [notice] 1#1: start worker process 22
+2022/11/22 09:12:16 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/11/22 09:12:16 [notice] 21#21: gracefully shutting down
+2022/11/22 09:12:16 [notice] 21#21: exiting
+2022/11/22 09:12:16 [notice] 22#22: gracefully shutting down
+2022/11/22 09:12:16 [notice] 22#22: exiting
+2022/11/22 09:12:16 [notice] 21#21: exit
+2022/11/22 09:12:16 [notice] 22#22: exit
+2022/11/22 09:12:16 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2022/11/22 09:12:16 [notice] 1#1: worker process 21 exited with code 0
+2022/11/22 09:12:16 [notice] 1#1: worker process 22 exited with code 0
+2022/11/22 09:12:16 [notice] 1#1: exit
+2022/11/22 09:12:22 [notice] 1#1: using the "epoll" event method
+2022/11/22 09:12:22 [notice] 1#1: nginx/1.23.2
+2022/11/22 09:12:22 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/11/22 09:12:22 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2022/11/22 09:12:22 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/11/22 09:12:22 [notice] 1#1: start worker processes
+2022/11/22 09:12:22 [notice] 1#1: start worker process 21
+2022/11/22 09:12:22 [notice] 1#1: start worker process 22
+2022/11/22 09:13:18 [error] 21#21: *1 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.20.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 09:13:28 [error] 21#21: *4 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.20.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 09:13:43 [error] 21#21: *7 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.20.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 09:13:44 [error] 22#22: *8 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.20.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 09:13:45 [error] 21#21: *10 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.20.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 09:14:11 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/11/22 09:14:11 [notice] 21#21: gracefully shutting down
+2022/11/22 09:14:11 [notice] 22#22: gracefully shutting down
+2022/11/22 09:14:11 [notice] 21#21: exiting
+2022/11/22 09:14:11 [notice] 22#22: exiting
+2022/11/22 09:14:11 [notice] 21#21: exit
+2022/11/22 09:14:11 [notice] 22#22: exit
+2022/11/22 09:14:11 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2022/11/22 09:14:11 [notice] 1#1: worker process 21 exited with code 0
+2022/11/22 09:14:11 [notice] 1#1: worker process 22 exited with code 0
+2022/11/22 09:14:11 [notice] 1#1: exit
+2022/11/22 09:14:18 [notice] 1#1: using the "epoll" event method
+2022/11/22 09:14:18 [notice] 1#1: nginx/1.23.2
+2022/11/22 09:14:18 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/11/22 09:14:18 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2022/11/22 09:14:18 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/11/22 09:14:18 [notice] 1#1: start worker processes
+2022/11/22 09:14:18 [notice] 1#1: start worker process 21
+2022/11/22 09:14:18 [notice] 1#1: start worker process 22
+2022/11/22 09:14:21 [error] 21#21: *1 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.20.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 09:14:22 [error] 22#22: *2 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.20.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 09:14:22 [error] 21#21: *4 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.20.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 09:14:23 [error] 21#21: *7 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.20.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 09:14:58 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/11/22 09:14:58 [notice] 21#21: gracefully shutting down
+2022/11/22 09:14:58 [notice] 22#22: gracefully shutting down
+2022/11/22 09:14:58 [notice] 22#22: exiting
+2022/11/22 09:14:58 [notice] 21#21: exiting
+2022/11/22 09:14:58 [notice] 22#22: exit
+2022/11/22 09:14:58 [notice] 21#21: exit
+2022/11/22 09:14:58 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2022/11/22 09:14:58 [notice] 1#1: worker process 21 exited with code 0
+2022/11/22 09:14:58 [notice] 1#1: worker process 22 exited with code 0
+2022/11/22 09:14:58 [notice] 1#1: exit
+2022/11/22 09:15:06 [notice] 1#1: using the "epoll" event method
+2022/11/22 09:15:06 [notice] 1#1: nginx/1.23.2
+2022/11/22 09:15:06 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/11/22 09:15:06 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2022/11/22 09:15:06 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/11/22 09:15:06 [notice] 1#1: start worker processes
+2022/11/22 09:15:06 [notice] 1#1: start worker process 21
+2022/11/22 09:15:06 [notice] 1#1: start worker process 22
+2022/11/22 09:15:18 [error] 21#21: *1 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.20.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 09:15:19 [error] 22#22: *2 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.20.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 09:15:20 [error] 21#21: *5 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.20.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 09:26:59 [error] 21#21: *8 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.20.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 09:27:00 [error] 21#21: *9 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.20.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 09:27:01 [error] 21#21: *12 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.20.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 09:27:02 [error] 21#21: *15 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.20.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 09:27:02 [error] 22#22: *16 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.20.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 09:31:34 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/11/22 09:31:34 [notice] 21#21: gracefully shutting down
+2022/11/22 09:31:34 [notice] 22#22: gracefully shutting down
+2022/11/22 09:31:34 [notice] 22#22: exiting
+2022/11/22 09:31:34 [notice] 21#21: exiting
+2022/11/22 09:31:34 [notice] 22#22: exit
+2022/11/22 09:31:34 [notice] 21#21: exit
+2022/11/22 09:31:35 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2022/11/22 09:31:35 [notice] 1#1: worker process 21 exited with code 0
+2022/11/22 09:31:35 [notice] 1#1: worker process 22 exited with code 0
+2022/11/22 09:31:35 [notice] 1#1: exit
+2022/11/22 09:42:05 [notice] 1#1: using the "epoll" event method
+2022/11/22 09:42:05 [notice] 1#1: nginx/1.23.2
+2022/11/22 09:42:05 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/11/22 09:42:05 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2022/11/22 09:42:05 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/11/22 09:42:05 [notice] 1#1: start worker processes
+2022/11/22 09:42:05 [notice] 1#1: start worker process 21
+2022/11/22 09:42:05 [notice] 1#1: start worker process 22
+2022/11/22 09:47:36 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/11/22 09:47:36 [notice] 21#21: gracefully shutting down
+2022/11/22 09:47:36 [notice] 21#21: exiting
+2022/11/22 09:47:36 [notice] 22#22: gracefully shutting down
+2022/11/22 09:47:36 [notice] 21#21: exit
+2022/11/22 09:47:36 [notice] 22#22: exiting
+2022/11/22 09:47:36 [notice] 22#22: exit
+2022/11/22 09:47:36 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2022/11/22 09:47:36 [notice] 1#1: worker process 21 exited with code 0
+2022/11/22 09:47:36 [notice] 1#1: signal 29 (SIGIO) received
+2022/11/22 09:47:36 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2022/11/22 09:47:36 [notice] 1#1: worker process 22 exited with code 0
+2022/11/22 09:47:36 [notice] 1#1: exit
+2022/11/22 09:47:46 [notice] 1#1: using the "epoll" event method
+2022/11/22 09:47:46 [notice] 1#1: nginx/1.23.2
+2022/11/22 09:47:46 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/11/22 09:47:46 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2022/11/22 09:47:46 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/11/22 09:47:46 [notice] 1#1: start worker processes
+2022/11/22 09:47:46 [notice] 1#1: start worker process 21
+2022/11/22 09:47:46 [notice] 1#1: start worker process 22
+2022/11/22 09:48:51 [error] 22#22: *2 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.22.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 09:51:31 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/11/22 09:51:31 [notice] 21#21: gracefully shutting down
+2022/11/22 09:51:31 [notice] 21#21: exiting
+2022/11/22 09:51:31 [notice] 22#22: gracefully shutting down
+2022/11/22 09:51:31 [notice] 22#22: exiting
+2022/11/22 09:51:31 [notice] 21#21: exit
+2022/11/22 09:51:31 [notice] 22#22: exit
+2022/11/22 09:51:31 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2022/11/22 09:51:31 [notice] 1#1: worker process 21 exited with code 0
+2022/11/22 09:51:31 [notice] 1#1: worker process 22 exited with code 0
+2022/11/22 09:51:31 [notice] 1#1: exit
+2022/11/22 09:51:39 [notice] 1#1: using the "epoll" event method
+2022/11/22 09:51:39 [notice] 1#1: nginx/1.23.2
+2022/11/22 09:51:39 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/11/22 09:51:39 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2022/11/22 09:51:39 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/11/22 09:51:39 [notice] 1#1: start worker processes
+2022/11/22 09:51:39 [notice] 1#1: start worker process 22
+2022/11/22 09:51:39 [notice] 1#1: start worker process 23
+2022/11/22 09:51:46 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/11/22 09:51:46 [notice] 23#23: gracefully shutting down
+2022/11/22 09:51:46 [notice] 22#22: gracefully shutting down
+2022/11/22 09:51:46 [notice] 23#23: exiting
+2022/11/22 09:51:46 [notice] 22#22: exiting
+2022/11/22 09:51:46 [notice] 23#23: exit
+2022/11/22 09:51:46 [notice] 22#22: exit
+2022/11/22 09:51:46 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2022/11/22 09:51:46 [notice] 1#1: worker process 23 exited with code 0
+2022/11/22 09:51:46 [notice] 1#1: signal 29 (SIGIO) received
+2022/11/22 09:51:46 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2022/11/22 09:51:46 [notice] 1#1: worker process 22 exited with code 0
+2022/11/22 09:51:46 [notice] 1#1: exit
+2022/11/22 09:51:55 [notice] 1#1: using the "epoll" event method
+2022/11/22 09:51:55 [notice] 1#1: nginx/1.23.2
+2022/11/22 09:51:55 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/11/22 09:51:55 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2022/11/22 09:51:55 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/11/22 09:51:55 [notice] 1#1: start worker processes
+2022/11/22 09:51:55 [notice] 1#1: start worker process 22
+2022/11/22 09:51:55 [notice] 1#1: start worker process 23
+2022/11/22 09:52:59 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/11/22 09:52:59 [notice] 22#22: gracefully shutting down
+2022/11/22 09:52:59 [notice] 22#22: exiting
+2022/11/22 09:52:59 [notice] 23#23: gracefully shutting down
+2022/11/22 09:52:59 [notice] 22#22: exit
+2022/11/22 09:52:59 [notice] 23#23: exiting
+2022/11/22 09:52:59 [notice] 23#23: exit
+2022/11/22 09:52:59 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2022/11/22 09:52:59 [notice] 1#1: worker process 22 exited with code 0
+2022/11/22 09:52:59 [notice] 1#1: worker process 23 exited with code 0
+2022/11/22 09:52:59 [notice] 1#1: exit
+2022/11/22 09:53:08 [notice] 1#1: using the "epoll" event method
+2022/11/22 09:53:08 [notice] 1#1: nginx/1.23.2
+2022/11/22 09:53:08 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/11/22 09:53:08 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2022/11/22 09:53:08 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/11/22 09:53:08 [notice] 1#1: start worker processes
+2022/11/22 09:53:08 [notice] 1#1: start worker process 21
+2022/11/22 09:53:08 [notice] 1#1: start worker process 22
+2022/11/22 09:54:42 [error] 22#22: *2 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.22.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 09:54:43 [error] 21#21: *1 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.22.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 09:54:44 [error] 21#21: *5 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.22.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 09:54:44 [error] 21#21: *7 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.22.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 09:58:52 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/11/22 09:58:52 [notice] 21#21: gracefully shutting down
+2022/11/22 09:58:52 [notice] 21#21: exiting
+2022/11/22 09:58:52 [notice] 22#22: gracefully shutting down
+2022/11/22 09:58:52 [notice] 21#21: exit
+2022/11/22 09:58:52 [notice] 22#22: exiting
+2022/11/22 09:58:52 [notice] 22#22: exit
+2022/11/22 09:58:52 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2022/11/22 09:58:52 [notice] 1#1: worker process 22 exited with code 0
+2022/11/22 09:58:52 [notice] 1#1: signal 29 (SIGIO) received
+2022/11/22 09:58:52 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2022/11/22 09:58:52 [notice] 1#1: worker process 21 exited with code 0
+2022/11/22 09:58:52 [notice] 1#1: exit
+2022/11/22 09:59:01 [notice] 1#1: using the "epoll" event method
+2022/11/22 09:59:01 [notice] 1#1: nginx/1.23.2
+2022/11/22 09:59:01 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/11/22 09:59:01 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2022/11/22 09:59:01 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/11/22 09:59:01 [notice] 1#1: start worker processes
+2022/11/22 09:59:01 [notice] 1#1: start worker process 21
+2022/11/22 09:59:01 [notice] 1#1: start worker process 22
+2022/11/22 10:28:37 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/11/22 10:28:37 [notice] 21#21: gracefully shutting down
+2022/11/22 10:28:37 [notice] 22#22: gracefully shutting down
+2022/11/22 10:28:37 [notice] 21#21: exiting
+2022/11/22 10:28:37 [notice] 22#22: exiting
+2022/11/22 10:28:37 [notice] 21#21: exit
+2022/11/22 10:28:37 [notice] 22#22: exit
+2022/11/22 10:28:37 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2022/11/22 10:28:37 [notice] 1#1: worker process 21 exited with code 0
+2022/11/22 10:28:37 [notice] 1#1: worker process 22 exited with code 0
+2022/11/22 10:28:37 [notice] 1#1: exit
+2022/11/22 10:28:50 [notice] 1#1: using the "epoll" event method
+2022/11/22 10:28:50 [notice] 1#1: nginx/1.23.2
+2022/11/22 10:28:50 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/11/22 10:28:50 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2022/11/22 10:28:50 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/11/22 10:28:50 [notice] 1#1: start worker processes
+2022/11/22 10:28:50 [notice] 1#1: start worker process 22
+2022/11/22 10:28:50 [notice] 1#1: start worker process 23
+2022/11/22 10:31:13 [error] 22#22: *1 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.22.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 10:31:13 [error] 23#23: *2 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.22.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 10:31:14 [error] 22#22: *5 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.22.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 10:31:14 [error] 23#23: *6 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.22.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 10:31:15 [error] 22#22: *8 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.22.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 10:31:20 [error] 22#22: *12 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.22.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 10:32:08 [error] 22#22: *15 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.22.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 10:32:08 [error] 23#23: *16 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.22.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 10:32:09 [error] 22#22: *18 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.22.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 10:32:09 [error] 23#23: *20 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.22.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 10:33:35 [error] 22#22: *25 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.22.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 10:33:35 [error] 22#22: *24 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.22.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 10:33:39 [error] 22#22: *28 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.22.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 10:37:29 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/11/22 10:37:29 [notice] 23#23: gracefully shutting down
+2022/11/22 10:37:29 [notice] 23#23: exiting
+2022/11/22 10:37:29 [notice] 22#22: gracefully shutting down
+2022/11/22 10:37:29 [notice] 23#23: exit
+2022/11/22 10:37:29 [notice] 22#22: exiting
+2022/11/22 10:37:29 [notice] 22#22: exit
+2022/11/22 10:37:29 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2022/11/22 10:37:29 [notice] 1#1: worker process 22 exited with code 0
+2022/11/22 10:37:29 [notice] 1#1: worker process 23 exited with code 0
+2022/11/22 10:37:29 [notice] 1#1: exit
+2022/11/22 10:37:37 [notice] 1#1: using the "epoll" event method
+2022/11/22 10:37:37 [notice] 1#1: nginx/1.23.2
+2022/11/22 10:37:37 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/11/22 10:37:37 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2022/11/22 10:37:37 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/11/22 10:37:37 [notice] 1#1: start worker processes
+2022/11/22 10:37:37 [notice] 1#1: start worker process 21
+2022/11/22 10:37:37 [notice] 1#1: start worker process 22
+2022/11/22 10:37:43 [error] 22#22: *2 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.22.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 10:37:44 [error] 21#21: *1 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.22.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 10:37:47 [error] 21#21: *5 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.22.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 10:37:48 [error] 22#22: *6 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.22.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 10:37:48 [error] 21#21: *8 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.22.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 10:37:49 [error] 21#21: *11 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.22.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 10:37:50 [error] 21#21: *13 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.22.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 10:37:50 [error] 21#21: *16 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.22.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 10:45:32 [error] 21#21: *19 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.22.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 10:45:49 [error] 21#21: *22 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.22.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 10:47:13 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/11/22 10:47:13 [notice] 21#21: gracefully shutting down
+2022/11/22 10:47:13 [notice] 22#22: gracefully shutting down
+2022/11/22 10:47:13 [notice] 21#21: exiting
+2022/11/22 10:47:13 [notice] 22#22: exiting
+2022/11/22 10:47:13 [notice] 21#21: exit
+2022/11/22 10:47:13 [notice] 22#22: exit
+2022/11/22 10:47:13 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2022/11/22 10:47:13 [notice] 1#1: worker process 21 exited with code 0
+2022/11/22 10:47:13 [notice] 1#1: signal 29 (SIGIO) received
+2022/11/22 10:47:13 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2022/11/22 10:47:13 [notice] 1#1: worker process 22 exited with code 0
+2022/11/22 10:47:13 [notice] 1#1: exit
+2022/11/22 10:47:23 [notice] 1#1: using the "epoll" event method
+2022/11/22 10:47:23 [notice] 1#1: nginx/1.23.2
+2022/11/22 10:47:23 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/11/22 10:47:23 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2022/11/22 10:47:23 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/11/22 10:47:23 [notice] 1#1: start worker processes
+2022/11/22 10:47:23 [notice] 1#1: start worker process 21
+2022/11/22 10:47:23 [notice] 1#1: start worker process 22
+2022/11/22 10:48:27 [error] 21#21: *1 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.22.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 10:48:28 [error] 22#22: *2 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.22.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 10:48:29 [error] 21#21: *5 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.22.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 10:48:43 [error] 21#21: *8 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.22.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 10:49:30 [error] 21#21: *11 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.22.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 10:50:38 [error] 21#21: *15 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.22.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 10:51:09 [error] 21#21: *17 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.22.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 10:51:10 [error] 21#21: *18 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.22.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 11:21:33 [error] 21#21: *22 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.22.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 12:06:59 [error] 21#21: *25 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.22.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost"
+2022/11/22 12:15:39 [error] 21#21: *26 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.22.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 12:15:41 [error] 21#21: *27 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.22.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 12:19:56 [error] 21#21: *31 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.22.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 12:21:47 [error] 22#22: *34 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.22.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 12:22:57 [error] 22#22: *37 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.22.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 12:23:03 [error] 22#22: *40 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.22.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 12:27:46 [error] 21#21: *45 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 12:30:04 [error] 22#22: *47 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 12:30:17 [error] 22#22: *53 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 12:30:51 [error] 22#22: *59 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 12:31:07 [error] 21#21: *64 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 12:31:10 [error] 21#21: *69 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 12:31:18 [error] 21#21: *70 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 12:31:39 [error] 21#21: *79 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 12:32:08 [error] 21#21: *87 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 12:33:16 [error] 22#22: *116 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 12:34:29 [error] 22#22: *122 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 12:35:41 [error] 22#22: *132 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 12:38:12 [error] 22#22: *136 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 12:39:29 [error] 22#22: *143 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 12:40:23 [error] 21#21: *156 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 12:41:36 [error] 21#21: *163 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 12:44:11 [error] 22#22: *168 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 12:45:13 [error] 21#21: *180 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 12:46:58 [error] 21#21: *188 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 12:49:18 [error] 22#22: *197 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 12:51:10 [error] 22#22: *203 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 12:54:21 [error] 22#22: *208 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 12:55:15 [error] 22#22: *215 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 12:55:48 [error] 21#21: *222 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 12:57:08 [error] 21#21: *227 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 12:58:02 [error] 21#21: *231 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 12:59:01 [error] 22#22: *238 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 12:59:57 [error] 21#21: *244 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 13:00:25 [error] 21#21: *250 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 13:03:05 [error] 22#22: *255 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 13:04:23 [error] 21#21: *263 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 13:04:26 [error] 22#22: *268 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 13:11:37 [error] 22#22: *273 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 13:15:40 [error] 21#21: *282 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 13:15:46 [error] 22#22: *283 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 13:17:14 [error] 22#22: *290 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 13:17:31 [error] 21#21: *297 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 13:20:06 [error] 22#22: *303 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 13:22:06 [error] 22#22: *308 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 13:22:08 [error] 22#22: *307 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 13:22:32 [error] 21#21: *309 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 13:22:33 [error] 22#22: *310 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 13:22:33 [error] 21#21: *311 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 13:23:22 [error] 22#22: *314 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 13:24:00 [error] 21#21: *316 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 13:24:27 [error] 22#22: *315 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 13:24:30 [error] 21#21: *326 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 13:33:08 [error] 21#21: *330 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 13:33:26 [error] 21#21: *331 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 13:36:28 [error] 21#21: *338 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 13:37:12 [error] 21#21: *337 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 13:37:38 [error] 22#22: *342 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 13:38:14 [error] 21#21: *344 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 13:38:52 [error] 21#21: *348 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 13:39:26 [error] 22#22: *349 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 13:39:42 [error] 22#22: *346 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 13:40:57 [error] 21#21: *354 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 13:54:56 [error] 22#22: *365 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 13:56:25 [error] 22#22: *369 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 13:57:51 [error] 22#22: *372 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 14:00:23 [error] 21#21: *382 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 14:02:15 [error] 21#21: *385 rewrite or internal redirection cycle while internally redirecting to "/123_s.jpg///////////", client: 172.22.0.1, server: , request: "GET /123_s.jpg HTTP/1.1", host: "localhost", referrer: "https://serieslife.online/ovp.php?ver=1&autoplay=1&v=8d94458a2b7741a172956c4b6a86f3a7&cb=8b8e8700-aad1-4845-959a-68c3c783a957&fclose=false&sub_id=base&testad=no&nomon=1&cdiv=96&r=https%3A%2F%2Fwww.cyberforum.ru%2Fjavascript-api%2Fthread2030395.html"
+2022/11/22 14:02:15 [error] 22#22: *386 rewrite or internal redirection cycle while internally redirecting to "/123_s.jpg///////////", client: 172.22.0.1, server: , request: "OPTIONS /123_s.jpg HTTP/1.1", host: "localhost", referrer: "https://serieslife.online/ovp.php?ver=1&autoplay=1&v=8d94458a2b7741a172956c4b6a86f3a7&cb=8b8e8700-aad1-4845-959a-68c3c783a957&fclose=false&sub_id=base&testad=no&nomon=1&cdiv=96&r=https%3A%2F%2Fwww.cyberforum.ru%2Fjavascript-api%2Fthread2030395.html"
+2022/11/22 14:03:15 [error] 21#21: *388 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 14:07:15 [error] 21#21: *392 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 14:07:45 [error] 21#21: *394 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 14:11:23 [error] 21#21: *398 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 14:13:16 [error] 21#21: *400 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.22.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/connect.php"
+2022/11/22 14:13:18 [error] 22#22: *402 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 14:16:24 [error] 22#22: *406 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 14:18:34 [error] 22#22: *419 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 14:18:42 [error] 21#21: *420 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 14:20:39 [error] 22#22: *425 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 14:22:28 [error] 21#21: *431 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 14:22:47 [error] 21#21: *433 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 14:23:49 [error] 21#21: *438 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 14:24:21 [error] 21#21: *441 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 14:25:25 [error] 21#21: *446 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 14:28:42 [error] 21#21: *449 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 14:30:02 [error] 22#22: *455 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 14:30:24 [error] 22#22: *457 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 14:31:36 [error] 22#22: *461 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 14:32:31 [error] 22#22: *463 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 14:32:32 [error] 21#21: *464 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/22 14:32:34 [error] 22#22: *466 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/23 06:18:17 [notice] 1#1: using the "epoll" event method
+2022/11/23 06:18:17 [notice] 1#1: nginx/1.23.2
+2022/11/23 06:18:17 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/11/23 06:18:17 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2022/11/23 06:18:17 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/11/23 06:18:17 [notice] 1#1: start worker processes
+2022/11/23 06:18:17 [notice] 1#1: start worker process 21
+2022/11/23 06:18:17 [notice] 1#1: start worker process 22

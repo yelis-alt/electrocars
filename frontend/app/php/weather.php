@@ -23,4 +23,3 @@ $weather = getWeatherDataXml(3600, $_POST['city']);
 $path = $_SERVER['DOCUMENT_ROOT']."/php/weather.txt";
 unlink($path);
 echo $weather;
-?>
