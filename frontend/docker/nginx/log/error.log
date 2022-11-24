@@ -977,3 +977,37 @@
 2022/11/23 10:20:54 [error] 21#21: *24 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
 2022/11/23 13:40:07 [error] 21#21: *28 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
 2022/11/23 13:55:34 [error] 21#21: *31 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/24 07:54:19 [notice] 1#1: using the "epoll" event method
+2022/11/24 07:54:19 [notice] 1#1: nginx/1.23.2
+2022/11/24 07:54:19 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/11/24 07:54:19 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2022/11/24 07:54:19 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/11/24 07:54:19 [notice] 1#1: start worker processes
+2022/11/24 07:54:19 [notice] 1#1: start worker process 22
+2022/11/24 07:54:19 [notice] 1#1: start worker process 23
+2022/11/24 08:03:00 [error] 22#22: *1 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.22.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost"
+2022/11/24 08:03:06 [error] 23#23: *2 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/24 08:03:16 [error] 22#22: *12 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/24 08:10:03 [error] 22#22: *16 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/24 08:12:11 [error] 22#22: *19 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/24 08:19:08 [error] 22#22: *25 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/24 08:19:11 [error] 22#22: *28 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/24 08:20:34 [error] 22#22: *32 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/24 08:20:37 [error] 22#22: *31 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/24 08:21:16 [error] 23#23: *37 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/24 08:21:50 [error] 23#23: *48 rewrite or internal redirection cycle while internally redirecting to "/images/c1.png///////////", client: 172.22.0.1, server: , request: "GET /images/c1.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/24 10:03:12 [error] 23#23: *264 rewrite or internal redirection cycle while internally redirecting to "/images/d.png///////////", client: 172.22.0.1, server: , request: "GET /images/d.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/24 10:03:14 [error] 22#22: *263 rewrite or internal redirection cycle while internally redirecting to "/images/d.png///////////", client: 172.22.0.1, server: , request: "GET /images/d.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/24 11:07:47 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/11/24 11:07:47 [notice] 23#23: gracefully shutting down
+2022/11/24 11:07:47 [notice] 22#22: gracefully shutting down
+2022/11/24 11:07:47 [notice] 22#22: exiting
+2022/11/24 11:07:47 [notice] 23#23: exiting
+2022/11/24 11:07:47 [notice] 22#22: exit
+2022/11/24 11:07:47 [notice] 23#23: exit
+2022/11/24 11:07:47 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2022/11/24 11:07:47 [notice] 1#1: worker process 22 exited with code 0
+2022/11/24 11:07:47 [notice] 1#1: signal 29 (SIGIO) received
+2022/11/24 11:07:47 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2022/11/24 11:07:47 [notice] 1#1: worker process 23 exited with code 0
+2022/11/24 11:07:47 [notice] 1#1: exit

@@ -230,12 +230,10 @@ $(document).ready(function() {
         obl = YMaps.location.region;
         if (dict[$('.city-select').val(cita)] > 0) {
             $('.select-city option[value=cita]').attr('selected','selected');
-            $('.select-city').attr('placeholder', $('.select-city').val())
         }
         else {
             cap = capitals[obl];
             $('.select-city option[value=cap]').attr('selected','selected');
-            $('.select-city').attr('placeholder', 'cccd')
         }
     }
     else
