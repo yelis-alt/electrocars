@@ -969,3 +969,11 @@
 2022/11/23 06:18:17 [notice] 1#1: start worker processes
 2022/11/23 06:18:17 [notice] 1#1: start worker process 21
 2022/11/23 06:18:17 [notice] 1#1: start worker process 22
+2022/11/23 10:13:19 [error] 21#21: *1 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.22.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost"
+2022/11/23 10:13:20 [error] 22#22: *4 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/23 10:13:29 [error] 21#21: *12 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/23 10:20:21 [error] 21#21: *17 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/23 10:20:31 [error] 21#21: *19 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/23 10:20:54 [error] 21#21: *24 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/23 13:40:07 [error] 21#21: *28 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
+2022/11/23 13:55:34 [error] 21#21: *31 rewrite or internal redirection cycle while internally redirecting to "/images/c.png///////////", client: 172.22.0.1, server: , request: "GET /images/c.png HTTP/1.1", host: "localhost", referrer: "http://localhost/index.html"
