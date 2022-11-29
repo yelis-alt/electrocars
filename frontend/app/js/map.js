@@ -74,6 +74,13 @@ function build(ind, caption, img){
         .add(myPlacemarkWithContent);
 };
 
+function tok(str) {
+    if (str == 'ac') {
+        return ' (Переменный ток)'
+    } else {
+        return ' (Постоянный ток)'
+    }
+};
 img_pos= '/images/c.png';
 img_neg = '/images/d.png';
 
@@ -88,7 +95,14 @@ $.ajax({
             )
             $.each(jsc, function(index){
                 caption_pos = '<b>№ <b/> ' + String(jsc[index].id) + '<br/>' +
-                    String(jsc[index].address) + '<br/>' + '<img src="/images/chademo.png" </img>';
+                    'Адрес: ' + String(jsc[index].address) + '<br/>' +
+                    'Компания: ' + String(jsc[index].company) + '<br/>' +
+                    'Тип тока: ' + String(jsc[index].type).toUpperCase()  +
+                     tok(jsc[index].type) + '<br/>' +
+                    'Мощность: '+ String(jsc[index].power).toUpperCase() + " кВт" + '<br/>' +
+                    '<img src="/images/chademo1.png" </img>' + '<br/>' +
+                    '________________' + '<br/>' +
+                    String(jsc[index].price) + ' руб. за 1 кВт';
                 caption_neg = '<b>№ <b/> ' + String(jsc[index].id) + '<br/>' +
                               'ЭЗС временно недоступна';
                 if (jsc[index].status == 1) {
