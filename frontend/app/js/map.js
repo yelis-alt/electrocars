@@ -81,41 +81,57 @@ function tok(str) {
         return ' (Постоянный ток)'
     }
 };
-img_pos= '/images/c.png';
+
+img_pos = '/images/c.png';
 img_neg = '/images/d.png';
 
-plug_input = $('#line1').val();
-alert(plug_input);
+plug_select = 'type2';
+plug_path = '/images/type2.png';
 
-$.ajax({
-    type:'GET',
-    url: '/php/stations.php',
-    success: function (data){
-        var jsc = JSON.parse(data);
-        ymaps.ready(function () {
-            MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-                '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-            )
-            $.each(jsc, function(index){
-                caption_pos = '<b>№ <b/> ' + String(jsc[index].id) + '<br/>' + '________________' + '<br/>' +
-                    'Адрес: ' + String(jsc[index].address) + '<br/>' +
-                    'Компания: ' + String(jsc[index].company) + '<br/>' +
-                    'Тип тока: ' + String(jsc[index].type).toUpperCase()  +
-                     tok(jsc[index].type) + '<br/>' +
-                    'Мощность: '+ String(jsc[index].power).toUpperCase() + " кВт" + '<br/>' +
-                    '<img src="/images/chademo1.png" </img>' + '<br/>' +
-                    '________________' + '<br/>' +
-                    String(jsc[index].price) + ' руб. за 1 кВт';
-                caption_neg = '<b>№ <b/> ' + String(jsc[index].id) + '<br/>' + '________________' + '<br/>' +
-                              'ЭЗС временно недоступна';
-                if (jsc[index].status == 1) {
-                    build(jsc[index], caption_pos, img_pos);
-                    build(jsc[index], caption_pos, img_pos);
-                } else {
-                    build(jsc[index], caption_neg, img_neg);
-                    build(jsc[index], caption_neg, img_neg);
-                }
-            })
-        });
-    }
+function json_take() {
+    $.ajax({
+        type:'POST',
+        url: '/php/stations.php',
+        data: {plug: plug_select},
+        success: function (data){
+            var jsc = JSON.parse(data);
+            ymaps.ready(function () {
+                MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+                    '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+                )
+
+                $.each(jsc, function(index){
+                    caption_pos = '<b>№ <b/> ' + String(jsc[index].id) + '<br/>' + '________________' + '<br/>' +
+                        'Адрес: ' + String(jsc[index].address) + '<br/>' +
+                        'Компания: ' + String(jsc[index].company) + '<br/>' +
+                        'Тип тока: ' + String(jsc[index].type).toUpperCase()  +
+                        tok(jsc[index].type) + '<br/>' +
+                        'Мощность: '+ String(jsc[index].power).toUpperCase() + " кВт" + '<br/>' +
+                        '<img src=' + '"' + plug_path + '"' + '</img>' + '<br/>' +
+                        '________________' + '<br/>' +
+                        String(jsc[index].price) + ' руб. за 1 кВт';
+                    caption_neg = '<b>№ <b/> ' + String(jsc[index].id) + '<br/>' + '________________' + '<br/>' +
+                        'ЭЗС временно недоступна';
+                    if (jsc[index].status == 1) {
+                        build(jsc[index], caption_pos, img_pos);
+                        build(jsc[index], caption_pos, img_pos);
+                    } else {
+                        build(jsc[index], caption_neg, img_neg);
+                        build(jsc[index], caption_neg, img_neg);
+                    }
+                })
+            });
+        }
+    });
+};
+
+$('input:radio').click(function() {
+    plug_select = $('input:radio:checked').val();
+    plug_path = '/images/' + plug_select + ".png";
+    json_take();
 });
+
+window.addEventListener('DOMContentLoaded', function() {
+    json_take();
+});
+

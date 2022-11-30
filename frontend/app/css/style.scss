@@ -204,7 +204,7 @@ $color: #005999;
 	text-align: center;
 	height: 57.5px;
 	opacity: 0.5;
-	background: url("../images/t2.png") 50% 50%;
+	background: url("../images/type2.png") 50% 50%;
 	cursor: pointer;
 }
 .charger__type__chooser-radio2 {
@@ -721,6 +721,10 @@ input[type="range"] {
 
 #ok {
 	@extend %ok;
+}
+
+b {
+	font-family: 'Yandex Sans', 'sans-serif';
 }
 
 @media (max-width: 1024px) {

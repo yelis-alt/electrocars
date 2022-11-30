@@ -5,11 +5,16 @@ $pdo = new PDO('mysql:host=mysql;
     'root',
     'krasmadelphi');
 
-$statement = $pdo->prepare("SELECT * FROM Stations");
-$statement->execute();
-$results = $statement->fetchAll(PDO::FETCH_ASSOC);
-$json = json_encode($results, JSON_UNESCAPED_UNICODE);
+function quer ($con, $plug) {
+    $statement = $con->prepare("SELECT * FROM Stations 
+                                WHERE plug =".'"'.(string)$plug.'"');
+    $statement->execute();
+    $results = $statement->fetchAll(PDO::FETCH_ASSOC);
+    $json = json_encode($results, JSON_UNESCAPED_UNICODE);
+    return $json;
+};
 
-echo $json;
+$res = quer($pdo, $_POST['plug']);
+echo $res;
 
 
