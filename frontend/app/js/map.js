@@ -84,6 +84,9 @@ function tok(str) {
 img_pos= '/images/c.png';
 img_neg = '/images/d.png';
 
+plug_input = $('#line1').val();
+alert(plug_input);
+
 $.ajax({
     type:'GET',
     url: '/php/stations.php',
@@ -94,7 +97,7 @@ $.ajax({
                 '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
             )
             $.each(jsc, function(index){
-                caption_pos = '<b>№ <b/> ' + String(jsc[index].id) + '<br/>' +
+                caption_pos = '<b>№ <b/> ' + String(jsc[index].id) + '<br/>' + '________________' + '<br/>' +
                     'Адрес: ' + String(jsc[index].address) + '<br/>' +
                     'Компания: ' + String(jsc[index].company) + '<br/>' +
                     'Тип тока: ' + String(jsc[index].type).toUpperCase()  +
@@ -103,7 +106,7 @@ $.ajax({
                     '<img src="/images/chademo1.png" </img>' + '<br/>' +
                     '________________' + '<br/>' +
                     String(jsc[index].price) + ' руб. за 1 кВт';
-                caption_neg = '<b>№ <b/> ' + String(jsc[index].id) + '<br/>' +
+                caption_neg = '<b>№ <b/> ' + String(jsc[index].id) + '<br/>' + '________________' + '<br/>' +
                               'ЭЗС временно недоступна';
                 if (jsc[index].status == 1) {
                     build(jsc[index], caption_pos, img_pos);
