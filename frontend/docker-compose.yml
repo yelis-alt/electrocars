@@ -27,7 +27,7 @@ services:
         volumes:
             - ./docker/mysql:/var/lib/mysql
         environment:
-            MYSQL_ROOT_PASSWORD: krasmadelhpi
+            MYSQL_ROOT_PASSWORD: krasmadelphi
             MYSQL_DATABASE: ELECTRO
             MYSQL_USER: arsel
             MYSQL_PASSWORD: krasmadelhpi
