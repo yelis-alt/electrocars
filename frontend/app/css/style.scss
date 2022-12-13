@@ -53,6 +53,7 @@ $color: #005999;
 	margin-left: 4px;
 	margin-top: -5px;
 }
+
 @font-face {
 	font-family: 'DinCondMedium';
 	src: url("../fonts/DinCondMedium.ttf") format('truetype');
@@ -507,7 +508,7 @@ input[type="range"] {
 	justify-content: flex-start; 
 	flex-wrap: wrap;
 	&-title {
-		margin-top: -8px;
+		margin-top: -3px;
 		@extend %small_title;
 		padding-top: 8px;
 		padding-left: 90px;
@@ -516,7 +517,7 @@ input[type="range"] {
 	}
 	&-number{
 		float: left;
-		margin-top: 0;
+		margin-top: 5px;
 		background-color: transparent;
 		margin-left: 5px;
 		&::-webkit-inner-spin-button {
@@ -541,13 +542,13 @@ input[type="range"] {
 		text-align: left;
 		float: left;
 		color: $color;
-		margin-top: 6px;
+		margin-top: 11px;
 		font-weight: 600;
 	}
 
 	&-explanation_first { 
 		@extend %explanations;
-		margin-top: -6px;
+		margin-top: 3px;
 	}
 
 	&-explanation_second { 
@@ -567,14 +568,21 @@ input[type="range"] {
 	display:flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: 1.5px;
+	padding-top: 53px;
+	padding-left: 124px;
 	&-select {
-		width: 150px;
-		background: rgb(241, 241, 241);
-		font-size: 1.0rem;
+		width: 400px;
+		text-align-last:center;
+		height: 42px;
+		background: $color;
+		font-size: 2.0rem;
 		font-family: 'DinCondMedium', 'sans-serif';
 		font-weight: 600;
-		border: solid 1.5px black;
+		color:  rgb(255, 255, 255);
+		border: solid 1.5px $color;
+		&:focus {
+			outline: none;
+		}
 	}
 }
 
@@ -649,7 +657,6 @@ input[type="range"] {
 	border: solid $color;
 	position: absolute;
 }
-
 .routing__legendbox {
 	width: 213.5px;
 	height: 80px;
@@ -658,6 +665,7 @@ input[type="range"] {
 	position: absolute;
 	background-color: white;
 	border: solid 0.08em rgb(213,213,206);
+
 	span {
 		font-family: 'Yandex Sans', 'sans-serif';
 		color: rgb(117,117,117);
@@ -708,7 +716,6 @@ input[type="range"] {
 	font-size: 14.3px;
 	background-color: white;
 }
-
 .routing__control-tire {
 	font-family: 'Yandex Sans', 'sans-serif';
 	color: rgb(102,102,102);
@@ -718,11 +725,9 @@ input[type="range"] {
 	margin-left: 146.5px;
 	margin-top: -3px;
 }
-
 #ok {
 	@extend %ok;
 }
-
 b {
 	font-family: 'Yandex Sans', 'sans-serif';
 }
@@ -746,7 +751,6 @@ b {
 			}
 		}
 	}
-
 	.tabs {
         position: absolute;
         margin-top: 61px;
@@ -767,7 +771,7 @@ b {
 			float: none;
 			height: 3px;
 			font-family: 'DinCondLight', 'sans-serif';
-			padding-bottom: 25px;
+			padding-bottom: 26px;
 			border: none;
 			outline: none;
 		&::after {
@@ -775,7 +779,7 @@ b {
             display: block;
             margin-top: 2px;
             width: 0;
-            height: 2.5px;
+            height: 3px;
             background: rgb(0, 89, 153);
             transition: width .2s;
 		}
@@ -789,7 +793,28 @@ b {
 			border-bottom: 3.5px solid $color;
 		}
 	}
-
+	.city{
+		display:flex;
+		position: absolute;
+		justify-content: center;
+		align-items: center;
+		padding-top: 11px;
+		padding-left: 298px;
+		&-select {
+			width: 200px;
+			text-align-last:center;
+			height: 35px;
+			background: $color;
+			font-size: 1.5rem;
+			font-family: 'DinCondMedium', 'sans-serif';
+			font-weight: 600;
+			color:  rgb(255, 255, 255);
+			border: solid 1.5px $color;
+			&:focus {
+				outline: none;
+			}
+		}
+	}
     .textbox {
         margin-top: 35px;
         white-space: nowrap;
@@ -801,7 +826,6 @@ b {
 			display: flex;
 		}
 	}
-
 	.charger {
         width: 490px;
         height: 450px;
@@ -811,7 +835,6 @@ b {
         border-radius: 3%;
         position: absolute;
     }
-
 	#map {
 		padding: 0;
 		margin: 17.5px 0 0 10px;
@@ -820,7 +843,6 @@ b {
 		border: solid $color;
 		display: inline-block;
 	}
-	
 	.routing__control {
 		position: absolute;
 		display: flex;
@@ -831,12 +853,36 @@ b {
 			margin-left: 20px;
 		}
 	}
-
 	#ok {
 	@extend %ok;
 	margin-top: -5.5px;
 	}
-
+	.routing__legendbox {
+		width: 213.5px;
+		height: 80px;
+		margin-top: 193.5px;
+		margin-left: 22.5px;
+		position: absolute;
+		background-color: white;
+		border: solid 0.08em rgb(213,213,206);
+		span {
+			font-family: 'Yandex Sans', 'sans-serif';
+			color: rgb(117,117,117);
+			font-size: 0.7rem;
+		}
+		div {
+			margin-top: 1px;
+			display: inline;
+			position: absolute;
+			margin-left: 3px;
+		}
+		img {
+			margin-top: 3px;
+			margin-left: 25px;
+			width: 15px;
+			height: 15px;
+		}
+	}
 	.accumulator{
 		margin-top: 481.5px;
 		margin-left: 10px;
@@ -854,7 +900,6 @@ b {
 			display: block;
 			}
 		}
-	
 	.accumulator__temp{
 		flex-direction: row; 
 		justify-content: flex-start; 
@@ -892,7 +937,6 @@ b {
 			font-weight: 600;
 		}
 	}
-
 	.weather{
 		margin-top: 14px;
 		margin-left: 10px;
@@ -911,7 +955,6 @@ b {
 			display: block;
 			}
 		}
-	
 	.weather__temp{
 		flex-direction: row; 
 		justify-content: flex-start; 
@@ -974,24 +1017,7 @@ b {
 			font-size: 0.85rem;
 		}
 
-	.city{
-		display:flex;
-		justify-content: center;
-		align-items: center;
-		margin-top: 2.5px;
-		&-select {
-			width: 120px;
-			height: 21px;
-			background: rgb(241, 241, 241);
-			font-size: 0.9rem;
-			font-family: 'DinCondMedium', 'sans-serif';
-			font-weight: 600;
-			border: solid 1.5px black;
-			vertical-align: center;
-		}
-	}
 }
-	
 	.spending{
 		margin-top: 14px;
 		margin-left: 10px;
@@ -1009,7 +1035,6 @@ b {
 			display: block;
 			}
 		}
-	
 	.spending__temp{
 		flex-direction: row; 
 		justify-content: flex-start; 

@@ -2,7 +2,7 @@
 $pdo = new PDO('mysql:host=mysql;
                          dbname=ELECTRO; 
                          charset=UTF8',
-    'root',
+    'arsel',
     'krasmadelphi');
 
 function quer ($con, $plug) {

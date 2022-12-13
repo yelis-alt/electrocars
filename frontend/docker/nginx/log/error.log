@@ -1035,3 +1035,119 @@
 2022/11/30 07:14:14 [notice] 1#1: start worker process 21
 2022/11/30 07:29:45 [error] 20#20: *2 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.22.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost"
 2022/11/30 08:33:51 [error] 20#20: *24 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.22.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost"
+2022/12/08 07:22:07 [notice] 1#1: using the "epoll" event method
+2022/12/08 07:22:07 [notice] 1#1: nginx/1.23.2
+2022/12/08 07:22:07 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/12/08 07:22:07 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2022/12/08 07:22:07 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/12/08 07:22:07 [notice] 1#1: start worker processes
+2022/12/08 07:22:07 [notice] 1#1: start worker process 21
+2022/12/08 07:22:07 [notice] 1#1: start worker process 22
+2022/12/08 10:46:44 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/12/08 10:46:44 [notice] 21#21: gracefully shutting down
+2022/12/08 10:46:44 [notice] 22#22: gracefully shutting down
+2022/12/08 10:46:44 [notice] 22#22: exiting
+2022/12/08 10:46:44 [notice] 21#21: exiting
+2022/12/08 10:46:44 [notice] 22#22: exit
+2022/12/08 10:46:44 [notice] 21#21: exit
+2022/12/08 10:46:44 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2022/12/08 10:46:44 [notice] 1#1: worker process 22 exited with code 0
+2022/12/08 10:46:44 [notice] 1#1: signal 29 (SIGIO) received
+2022/12/08 10:46:44 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2022/12/08 10:46:44 [notice] 1#1: worker process 21 exited with code 0
+2022/12/08 10:46:44 [notice] 1#1: exit
+2022/12/08 10:46:49 [notice] 1#1: using the "epoll" event method
+2022/12/08 10:46:49 [notice] 1#1: nginx/1.23.2
+2022/12/08 10:46:49 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/12/08 10:46:49 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2022/12/08 10:46:49 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/12/08 10:46:49 [notice] 1#1: start worker processes
+2022/12/08 10:46:49 [notice] 1#1: start worker process 21
+2022/12/08 10:46:49 [notice] 1#1: start worker process 22
+2022/12/08 10:50:48 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/12/08 10:50:48 [notice] 22#22: gracefully shutting down
+2022/12/08 10:50:48 [notice] 22#22: exiting
+2022/12/08 10:50:48 [notice] 21#21: gracefully shutting down
+2022/12/08 10:50:48 [notice] 21#21: exiting
+2022/12/08 10:50:48 [notice] 22#22: exit
+2022/12/08 10:50:48 [notice] 21#21: exit
+2022/12/08 10:50:48 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2022/12/08 10:50:48 [notice] 1#1: worker process 21 exited with code 0
+2022/12/08 10:50:48 [notice] 1#1: worker process 22 exited with code 0
+2022/12/08 10:50:48 [notice] 1#1: exit
+2022/12/08 10:51:03 [notice] 1#1: using the "epoll" event method
+2022/12/08 10:51:03 [notice] 1#1: nginx/1.23.2
+2022/12/08 10:51:03 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/12/08 10:51:03 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2022/12/08 10:51:03 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/12/08 10:51:03 [notice] 1#1: start worker processes
+2022/12/08 10:51:03 [notice] 1#1: start worker process 21
+2022/12/08 10:51:03 [notice] 1#1: start worker process 22
+2022/12/08 10:51:56 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/12/08 10:51:56 [notice] 21#21: gracefully shutting down
+2022/12/08 10:51:56 [notice] 22#22: gracefully shutting down
+2022/12/08 10:51:56 [notice] 21#21: exiting
+2022/12/08 10:51:56 [notice] 22#22: exiting
+2022/12/08 10:51:56 [notice] 21#21: exit
+2022/12/08 10:51:56 [notice] 22#22: exit
+2022/12/08 10:51:57 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2022/12/08 10:51:57 [notice] 1#1: worker process 21 exited with code 0
+2022/12/08 10:51:57 [notice] 1#1: worker process 22 exited with code 0
+2022/12/08 10:51:57 [notice] 1#1: exit
+2022/12/08 10:52:06 [notice] 1#1: using the "epoll" event method
+2022/12/08 10:52:06 [notice] 1#1: nginx/1.23.2
+2022/12/08 10:52:06 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/12/08 10:52:06 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2022/12/08 10:52:06 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/12/08 10:52:06 [notice] 1#1: start worker processes
+2022/12/08 10:52:06 [notice] 1#1: start worker process 21
+2022/12/08 10:52:06 [notice] 1#1: start worker process 22
+2022/12/08 11:00:34 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/12/08 11:00:34 [notice] 22#22: gracefully shutting down
+2022/12/08 11:00:34 [notice] 21#21: gracefully shutting down
+2022/12/08 11:00:34 [notice] 22#22: exiting
+2022/12/08 11:00:34 [notice] 21#21: exiting
+2022/12/08 11:00:34 [notice] 22#22: exit
+2022/12/08 11:00:34 [notice] 21#21: exit
+2022/12/08 11:00:34 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2022/12/08 11:00:34 [notice] 1#1: worker process 21 exited with code 0
+2022/12/08 11:00:34 [notice] 1#1: signal 29 (SIGIO) received
+2022/12/08 11:00:34 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2022/12/08 11:00:34 [notice] 1#1: worker process 22 exited with code 0
+2022/12/08 11:00:34 [notice] 1#1: exit
+2022/12/08 11:01:08 [notice] 1#1: using the "epoll" event method
+2022/12/08 11:01:08 [notice] 1#1: nginx/1.23.2
+2022/12/08 11:01:08 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/12/08 11:01:08 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2022/12/08 11:01:08 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/12/08 11:01:08 [notice] 1#1: start worker processes
+2022/12/08 11:01:08 [notice] 1#1: start worker process 21
+2022/12/08 11:01:08 [notice] 1#1: start worker process 22
+2022/12/08 11:01:29 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/12/08 11:01:29 [notice] 22#22: gracefully shutting down
+2022/12/08 11:01:29 [notice] 21#21: gracefully shutting down
+2022/12/08 11:01:29 [notice] 22#22: exiting
+2022/12/08 11:01:29 [notice] 21#21: exiting
+2022/12/08 11:01:29 [notice] 22#22: exit
+2022/12/08 11:01:29 [notice] 21#21: exit
+2022/12/08 11:01:29 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2022/12/08 11:01:29 [notice] 1#1: worker process 21 exited with code 0
+2022/12/08 11:01:29 [notice] 1#1: worker process 22 exited with code 0
+2022/12/08 11:01:29 [notice] 1#1: exit
+2022/12/08 11:01:53 [notice] 1#1: using the "epoll" event method
+2022/12/08 11:01:53 [notice] 1#1: nginx/1.23.2
+2022/12/08 11:01:53 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/12/08 11:01:53 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2022/12/08 11:01:53 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/12/08 11:01:53 [notice] 1#1: start worker processes
+2022/12/08 11:01:53 [notice] 1#1: start worker process 21
+2022/12/08 11:01:53 [notice] 1#1: start worker process 22
+2022/12/13 12:52:58 [notice] 1#1: using the "epoll" event method
+2022/12/13 12:52:58 [notice] 1#1: nginx/1.23.2
+2022/12/13 12:52:58 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/12/13 12:52:58 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2022/12/13 12:52:58 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/12/13 12:52:58 [notice] 1#1: start worker processes
+2022/12/13 12:52:58 [notice] 1#1: start worker process 21
+2022/12/13 12:52:58 [notice] 1#1: start worker process 22
+2022/12/13 12:55:13 [error] 21#21: *15 rewrite or internal redirection cycle while internally redirecting to "/favicon.ico///////////", client: 172.18.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/php/stations.php"
