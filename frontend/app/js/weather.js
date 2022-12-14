@@ -228,21 +228,19 @@ $(document).ready(function() {
     {
         cita = YMaps.location.city;
         obl = YMaps.location.region;
-        if (dict[$('.city-select').val(cita)] > 0) {
-            $('.select-city option[value=cita]').attr('selected','selected');
-            $('.select-city').attr('placeholder', placeholderText[$(this).find(':selected').val()]);
+        if (dict[$('#select-city').val(cita)] > 0) {
+            $('#select-city').val(cita);
         }
         else {
             cap = capitals[obl];
-            $('.select-city option[value=cap]').attr('selected','selected');
-            $('.select-city').attr('placeholder', placeholderText[$(this).find(':selected').val()]);
+            $('#select-city').val(cap);
         }
     }
     else
         alert("Пожалуйста, разрешите доступ к использованию Вашей геопозиции!");
 });
 
-target = dict[$('.city-select').val()];
+target = dict[$('#select-city').val()];
 
 function requ() {
     $.ajax({
@@ -281,7 +279,7 @@ function requ() {
 };
 
 $('.city-select').on('change', function () {
-    target = dict[$('.city-select').val()];
+    target = dict[$('#select-city').val()];
     requ();
 });
 

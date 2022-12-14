@@ -1,5 +1,5 @@
 <?php
-$pdo = new PDO('mysql:host=mysql;
+$pdo = new PDO('mysql:host=mysql-latest;
                          dbname=ELECTRO; 
                          charset=UTF8',
     'arsel',
