@@ -30,7 +30,7 @@ services:
             MYSQL_ROOT_PASSWORD: krasmadelphi
             MYSQL_DATABASE: ELECTRO
             MYSQL_USER: arsel
-            MYSQL_PASSWORD: krasmadelhpi
+            MYSQL_PASSWORD: krasmadelphi
         healthcheck:
             test: [ "CMD", "mysqladmin" ,"ping", "-h", "localhost" ]
             timeout: 20s
